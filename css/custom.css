@@ -607,7 +607,12 @@ h2 {
 
 .showrroom_list {
   list-style: none;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
  
@@ -626,6 +631,11 @@ h2 {
 }
 
 .showrroom_list  a,.showrroom_list  a:active{ text-decoration: none !important;}
+
+@media screen and (max-width:600px) {
+  .showrroom_list{flex-direction: column;}
+  .showrroom_list  li{width: 80%; margin: 10% auto;}
+}
 
 
  /*=== 画像の表示エリア ================================= */
