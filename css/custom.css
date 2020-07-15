@@ -10,6 +10,12 @@ html {
   font-family: 'M PLUS 1p', sans-serif;
 }
 
+main{max-width: 1280px; margin: 0 auto;}
+
+@media screen and (max-width:480px) {
+html{font-size: 14px;}
+main{margin: auto 1%;}
+}
 .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
   object-fit: cover;
   height: 180px;
