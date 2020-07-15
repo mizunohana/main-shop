@@ -326,7 +326,7 @@ a.inline p {
 }
 
 .flex_box {
-  width: 1280px;
+  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,11 +345,21 @@ a.inline p {
   align-items: center;
 }
 
-.item_3 .first_box{width: 30%;}
-.item_2 .first_box{width: 48%;}
+.item_3 .first_box {
+  width: 30%;
+}
 
-.item_3 .first_box img{height: 500px;}
-.item_2 .first_box img{height: 800px;}
+.item_2 .first_box {
+  width: 48%;
+}
+
+.item_3 .first_box img {
+  height: 500px;
+}
+
+.item_2 .first_box img {
+  height: 800px;
+}
 
 .flex_box div.first_box img {
   width: 100%;
@@ -373,14 +383,19 @@ a.inline p {
   object-fit: cover;
 }
 
-.flex_box div.first_box:first-child{margin-left: 0%;}
-.flex_box div.first_box:last-child{margin-right: 0%;}
-
-.empty_item{
-  width:30%;
+.flex_box div.first_box:first-child {
+  margin-left: 0%;
 }
 
-h2{
+.flex_box div.first_box:last-child {
+  margin-right: 0%;
+}
+
+.empty_item {
+  width: 30%;
+}
+
+h2 {
   width: 100%;
   position: relative;
   text-align: left;
@@ -394,7 +409,7 @@ h2{
   padding-bottom: 1%;
 }
 
-.coordinator_doc{
+.coordinator_doc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,8 +434,6 @@ h2{
     height: 100%;
   }
 
-  .flex_box div.first_box:first-child{margin-left: 1%;}
-.flex_box div.first_box:last-child{margin-right: 1%;}
 }
 
 /*メニュー*/
@@ -472,7 +485,11 @@ h2{
 }
 
 /******* btnボタン *******/
-.btn{text-align: center; margin: 5% auto}
+.btn {
+  text-align: center;
+  margin: 5% auto
+}
+
 .btn-cross {
   display: inline-block;
   position: relative;
@@ -485,7 +502,9 @@ h2{
   text-align: center;
   font-size: 200%;
 }
-.btn-cross:before, .btn-cross:after {
+
+.btn-cross:before,
+.btn-cross:after {
   content: '';
   position: absolute;
   top: -7px;
@@ -493,24 +512,161 @@ h2{
   height: -webkit-calc(100% + 14px);
   height: calc(100% + 14px);
   /*background-color: black;*/
-  background:-webkit-gradient(linear, left top, right bottom, from(#40c2f0), to(#e85483));
-	background:-moz-linear-gradient(left, #40c2f0, #e85483);
-	background:linear-gradient(left, #40c2f0, #e85483);
+  background: -webkit-gradient(linear, left top, right bottom, from(#40c2f0), to(#e85483));
+  background: -moz-linear-gradient(left, #40c2f0, #e85483);
+  background: linear-gradient(left, #40c2f0, #e85483);
   transition: .3s;
 }
+
 .btn-cross:before {
   left: 7px;
 }
+
 .btn-cross:after {
   right: 7px;
 }
+
 .btn-cross:hover:before {
   top: 0px;
-  left:0;
+  left: 0;
   height: 100%;
 }
+
 .btn-cross:hover:after {
   top: 0px;
   right: 0;
   height: 100%;
+}
+
+/*ショールーム*/
+
+#include_showroom{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.showroom_box {
+  margin: 3% 0;
+}
+
+.sr_info {
+  text-align: center;
+}
+
+.showroom_box img {
+  object-fit: cover;
+}
+
+.showroom_box h4 {
+  padding-bottom: .5em;
+  font-size: 180%;
+  font-weight: 750;
+  text-align: center;
+  border-bottom: #e85483 2px solid;
+  margin-bottom: 1%;
+}
+
+.showroom_box h4 span {
+  display: block;
+  margin-bottom: .2em;
+  color: #aaa;
+  font-size: .8em;
+}
+
+.showroom_box h5 {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 300px;
+  max-width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background: #03A9F4;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.showroom_box h5:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #03A9F4;
+}
+
+.showroom_box p{line-height: 2;}
+
+.acces {
+  font-weight: 900;
+  font-size: 120%;
+}
+
+
+.showrroom_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.showrroom_list  li {
+  width: 200px;
+  text-align: center;
+ background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  height: 30px;
+  line-height: 30px;
+  margin-right: 2px;
+  font-size: 120%;
+  font-weight: 900;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.showrroom_list  a,.showrroom_list  a:active{ text-decoration: none !important;}
+
+
+ /*=== 画像の表示エリア ================================= */
+ .slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更ください */
+  width      : 100%;
+  height     : 500px;
+  margin     : auto;      /* サンプルは中央寄せの背景：白 */
+  background : #fff;
+}
+ 
+ /*=== 画像の設定 ======================================= */
+.slide img {
+  display    : block;
+  position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+  width      : inherit;
+  height     : inherit;
+  opacity    : 0;
+  animation  : slideAnime 18s ease infinite;
+  border-radius: 10px;
+}
+ 
+ /*=== スライドのアニメーションを段差で開始する ========= */
+.slide img:nth-of-type(1) { animation-delay: 3s }
+.slide img:nth-of-type(2) { animation-delay: 6s }
+.slide img:nth-of-type(3) { animation-delay: 9s }
+.slide img:nth-of-type(4) { animation-delay: 12s }
+.slide img:nth-of-type(5) { animation-delay: 15s }
+ 
+ /*=== スライドのアニメーション ========================= */
+@keyframes slideAnime{
+   0% { opacity: 0 }
+   2% { opacity: 1 }
+  18% { opacity: 1 }
+  20% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+
+@media screen and (max-width:600px) {
+  .slide{height: 200px;}
 }
