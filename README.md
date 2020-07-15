@@ -4,13 +4,14 @@
 
 ### アイテムバナー
 
-https://mizunohana.github.io/honten/item_banner.html
+https://mizunohana.github.io/main-shop/item_banner.html
 
 
 ## コーディネート一覧
 
-https://mizunohana.github.io/honten/coordination.html
+https://mizunohana.github.io/main-shop/coordination.html
 
 
 ## ショールーム
+https://mizunohana.github.io/main-shop/showroom.html
 
