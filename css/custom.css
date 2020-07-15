@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
 .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
   object-fit: cover;
   height: 180px;
@@ -399,7 +404,7 @@ h2 {
   width: 100%;
   position: relative;
   text-align: left;
-  font-size: 200%;
+  font-size: 1.5em;
   border-bottom: 3px solid;
   border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
   border-image-slice: 0 0 1;
@@ -500,7 +505,7 @@ h2 {
   font-weight: bold;
   color: #03A9F4;
   text-align: center;
-  font-size: 200%;
+  font-size: 1.5em;
 }
 
 .btn-cross:before,
@@ -540,7 +545,7 @@ h2 {
 
 /*ショールーム*/
 
-#include_showroom{
+#include_showroom {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -559,7 +564,7 @@ h2 {
 
 .showroom_box h4 {
   padding-bottom: .5em;
-  font-size: 180%;
+  font-size: 1.5rem;
   font-weight: 750;
   text-align: center;
   border-bottom: #e85483 2px solid;
@@ -581,7 +586,7 @@ h2 {
   min-width: 300px;
   max-width: 100%;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.3rem;
   background: #03A9F4;
   text-align: center;
   border-radius: 10px;
@@ -597,11 +602,13 @@ h2 {
   border-top: 15px solid #03A9F4;
 }
 
-.showroom_box p{line-height: 2;}
+.showroom_box p {
+  line-height: 2;
+}
 
 .acces {
   font-weight: 900;
-  font-size: 120%;
+  font-size: 1.2rem;
 }
 
 
@@ -615,68 +622,108 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
- 
-.showrroom_list  li {
+
+.showrroom_list li {
   width: 200px;
   text-align: center;
- background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   height: 30px;
   line-height: 30px;
   margin-right: 2px;
-  font-size: 120%;
+  font-size: 1.1rem;
   font-weight: 900;
   padding: 10px;
   color: #fff;
   border-radius: 10px;
 }
 
-.showrroom_list  a,.showrroom_list  a:active{ text-decoration: none !important;}
+.showrroom_list a,
+.showrroom_list a:active {
+  text-decoration: none !important;
+}
 
 @media screen and (max-width:600px) {
-  .showrroom_list{flex-direction: column;}
-  .showrroom_list  li{width: 80%; margin: 10% auto;}
+  .showrroom_list {
+    flex-direction: column;
+  }
+
+  .showrroom_list li {
+    width: 80%;
+    margin: 10% auto;
+  }
 }
 
 
- /*=== 画像の表示エリア ================================= */
- .slide {
-  position   : relative;
-  overflow   : hidden;
-                    /* 画像のサイズに合わせて変更ください */
-  width      : 100%;
-  height     : 500px;
-  margin     : auto;      /* サンプルは中央寄せの背景：白 */
-  background : #fff;
+/*=== 画像の表示エリア ================================= */
+.slide {
+  position: relative;
+  overflow: hidden;
+  /* 画像のサイズに合わせて変更ください */
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  /* サンプルは中央寄せの背景：白 */
+  background: #fff;
 }
- 
- /*=== 画像の設定 ======================================= */
+
+/*=== 画像の設定 ======================================= */
 .slide img {
-  display    : block;
-  position   : absolute;
-                      /* 画像のサイズを表示エリアに合せる */
-  width      : inherit;
-  height     : inherit;
-  opacity    : 0;
-  animation  : slideAnime 18s ease infinite;
+  display: block;
+  position: absolute;
+  /* 画像のサイズを表示エリアに合せる */
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  animation: slideAnime 18s ease infinite;
   border-radius: 10px;
 }
- 
- /*=== スライドのアニメーションを段差で開始する ========= */
-.slide img:nth-of-type(1) { animation-delay: 3s }
-.slide img:nth-of-type(2) { animation-delay: 6s }
-.slide img:nth-of-type(3) { animation-delay: 9s }
-.slide img:nth-of-type(4) { animation-delay: 12s }
-.slide img:nth-of-type(5) { animation-delay: 15s }
- 
- /*=== スライドのアニメーション ========================= */
-@keyframes slideAnime{
-   0% { opacity: 0 }
-   2% { opacity: 1 }
-  18% { opacity: 1 }
-  20% { opacity: 0 }
- 100% { opacity: 0 }
+
+/*=== スライドのアニメーションを段差で開始する ========= */
+.slide img:nth-of-type(1) {
+  animation-delay: 3s
+}
+
+.slide img:nth-of-type(2) {
+  animation-delay: 6s
+}
+
+.slide img:nth-of-type(3) {
+  animation-delay: 9s
+}
+
+.slide img:nth-of-type(4) {
+  animation-delay: 12s
+}
+
+.slide img:nth-of-type(5) {
+  animation-delay: 15s
+}
+
+/*=== スライドのアニメーション ========================= */
+@keyframes slideAnime {
+  0% {
+    opacity: 0
+  }
+
+  2% {
+    opacity: 1
+  }
+
+  18% {
+    opacity: 1
+  }
+
+  20% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
 @media screen and (max-width:600px) {
-  .slide{height: 200px;}
+  .slide {
+    height: 200px;
+  }
 }
