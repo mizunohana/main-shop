@@ -6,3 +6,6 @@
 
  //aside
  $(function(){ $.ajaxSetup({cache:false}); $("aside").load("./include/aside.html"); });
+
+  //footer
+  $(function(){ $.ajaxSetup({cache:false}); $("#include_footer").load("./include/footer.html"); });

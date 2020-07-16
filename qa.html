@@ -1,59 +1,94 @@
 <!DOCTYPE html>
+<html lang="ja">
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+  </style>
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <script src="./js/include_html.js"></script>
+  <title>mizunohana | mizunohana SELECT コーディネート事例 </title>
 
-    <title>Q&A</title>
-  </head>
-
+  <script type="text/javascript">
+  jQuery(function ($) {
+    //コンテンツを非表示に
+    $(".accordion-content").css("display", "none");
+    
+    //タイトルがクリックされたら
+    $(".js-accordion-title").click(function () {
+      //クリックしたjs-accordion-title以外の全てのopenを取る
+      $(".js-accordion-title").not(this).removeClass("open");
+      //クリックされたjs-accordion-title以外のcontentを閉じる
+      $(".js-accordion-title").not(this).next().slideUp(300);
+      //thisにopenクラスを付与
+      $(this).toggleClass("open");
+      //thisのcontentを展開、開いていれば閉じる
+      $(this).next().slideToggle(150);
+    });
+    
+    /* 下記でもOK
+     $(".accordion-content").css("display", "none");
+     $(".js-accordion-title").click(function () {
+       $(".js-accordion-title").not(this).removeClass("open").next().slideUp(300);
+       $(this).toggleClass("open").next().slideToggle(300);
+     });
+     */
+  });
   
+  </script>
 
-  <h1>よくあるご質問(FAQ)</h1>
+</head>
 
-<section>
-  <ul>
-    <li>お買い物にかんするQ&A</li>
-    <li>商品にかんするQ&A</li>
-  </ul>
-</section>
+<body>
+  <section class="container">
+    <!--ヘッダー読み込み-->
+    <div id="include_header"></div>
+    <!--ここまで-->
+    <div class="container">
+      <main>
+        <h2>よくあるご質問</h2>
+        <p>お客様から頂くお問合せの中で、よくあるご質問を集めました。<br>
+          こちらをご覧になっても解決しない内容はお問い合わせフォームにてお問い合わせください。<br><br>
+        </p>
+        <hr>
 
+        <h2>カテゴリーから探す</h2>
+        <hr>
+        <h2>お買い物について</h2>
 
+        <div id="accordion" class="accordion-container">
+          <h3 class="accordion-title js-accordion-title">会員登録をしなくても変えますか？</h3>
+          <div class="accordion-content">
+            <div>ご購入は会員登録が必要になります。<br>
+            まだ、会員登録がお済みでない場合、 <a href="https://ssl.aispr.jp/mizunohana/member/">こちら</a>から会員登録をお願い致します。<br>
+          <a href="https://ssl.aispr.jp/mizunohana/member/">▶新規会員登録</a></div>
+          </div>
+          <h3 class="accordion-title js-accordion-title">電話で問い合わせはできますか？</h3>
+          <div class="accordion-content">
+            <p>基本的にお問い合わせは、メールのみの対応となります。<br>ご了承ください。</p>
+            <a href="https://ssl.aispr.jp/mizunohana/member/">▶お問い合わせフォームはこちら</a>
+          </div>
+          <h3 class="accordion-title js-accordion-title">キャンセル方法を教えて下さい。</h3>
+          <div class="accordion-content">
+            <p>キャンセルは、基本NGです。</p>
+          </div>
+        </div>
 
-<h2>お買い物にかんする</h2>
+        <hr>
+        <h2>商品について</h2>
+      </main>
+      <!-- サイドメニューここから-->
+      <aside></aside>
+      <!-- サイドメニューここまで-->
+    </div>
+    <!-- フッターここから-->
+    <div id="include_footer"></div>
+    <!-- フッターここまで-->
+  </section>
+</body>
 
-<div class="cp_actab">
-  <input id="qa_4" type="radio" name="tabs1">
-  <label for="qa_4">会員登録をしなくても購入可能ですか？</label>
-  <div class="cp_actab-content">
-  <p>会員登録をお願いします。<br>
-  会員登録方法は、こちらをご覧ください。</p>
-  </div>
-  </div>
-
-<div class="cp_actab">
-  <input id="qa_1" type="radio" name="tabs1">
-  <label for="qa_1">キャンセル・返品について</label>
-  <div class="cp_actab-content">
-     <p>注文が確定した後の、キャンセルはうけつけていません。</p>
-  </div>
-
-  </div>
-  <div class="cp_actab">
-  <input id="qa_2" type="radio" name="tabs1">
-  <label for="qa_2">配送・送料について</label>
-  <div class="cp_actab-content">
-  <p>テキスト</p>
-  </div>
-  </div>
-
-  <div class="cp_actab">
-  <input id="qa_3" type="radio" name="tabs1">
-  <label for="qa_3">保証について</label>
-  <div class="cp_actab-content">
-  <p>テキスト</p>
-  </div>
-  </div>
-
-
-  </html>
+</html>
