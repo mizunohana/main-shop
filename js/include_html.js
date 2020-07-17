@@ -21,3 +21,8 @@
           return false;
         });
       });
+
+    //IE　object_fit
+    $(function () {
+      objectFitImages();
+    });

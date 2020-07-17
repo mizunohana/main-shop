@@ -83,12 +83,14 @@ footer {
 */ .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
   object-fit: cover;
   height: 180px;
+  font-family: 'object-fit: cover';
 }
 
 .tes_001 img {
   object-fit: cover;
   /*height:290px;*/
   border-radius: 5%;
+  font-family: 'object-fit: cover';
 }
 
 /*スマフォ対応*/
@@ -208,6 +210,7 @@ video {
   height: 70vh;
   object-fit: cover;
   filter: sepia(100%);
+  font-family: 'object-fit: cover';
 }
 
 .video-wrap h2 {
@@ -266,6 +269,8 @@ a.inline p {
   min-height: 300px !important;
   border-radius: 10px;
   object-fit: cover;
+  font-family: 'object-fit: cover';
+
 }
 
 .col_4 .coordination img {
@@ -377,6 +382,7 @@ a.inline p {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  font-family: 'object-fit: cover';
 }
 
 .flex_box div.second_box {
@@ -393,6 +399,7 @@ a.inline p {
   border-radius: 10px;
   width: 100%;
   object-fit: cover;
+  font-family: 'object-fit: cover';
 }
 
 .flex_box div.first_box:first-child {
@@ -581,6 +588,7 @@ footer .menu-container .menu .menu-item a {
 
 .showroom_box img {
   object-fit: cover;
+  font-family: 'object-fit: cover';
 }
 
 .showroom_box h4 {
@@ -869,6 +877,7 @@ aside img {
   width: 100%;
   margin-bottom: 5%;
   object-fit: cover;
+  font-family: 'object-fit: cover';
 }
 
 .side_banner {
@@ -1205,3 +1214,15 @@ hr {
   background-position: -100% 0;
   color: #fff;
 }
+
+
+/* IE object_fit */
+
+.ie_cover{
+  object-fit: cover;
+  font-family: 'object-fit: cover';
+}
+.ie_contain{
+ object-fit: contain;
+ font-family: 'object-fit: contain';
+ }
