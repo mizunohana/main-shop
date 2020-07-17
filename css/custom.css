@@ -301,6 +301,7 @@ a.inline p {
   padding: 1%;
 }
 
+ul.select{margin: 5% 0;}
 
 /*ライトボックス*/
 .popupbox {
@@ -896,6 +897,7 @@ aside img {
 @media screen and (max-width:600px) {
   aside img {
     width: 48%;
+    height: 100%;
   }
 
   aside h2,
@@ -1227,3 +1229,4 @@ hr {
  object-fit: contain;
  font-family: 'object-fit: contain';
  }
+
