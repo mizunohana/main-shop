@@ -80,7 +80,7 @@ footer {
 
 }
 
-*/ .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
+ .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
   object-fit: cover;
   height: 180px;
   font-family: 'object-fit: cover';
