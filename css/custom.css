@@ -76,9 +76,6 @@ footer {
     -webkit-order: 1;
     order: 1;
   }
-  main section {
-    margin-bottom: 15%;
-  }
   aside {
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -253,6 +250,38 @@ header img {
 }
 
 /*コーディネート*/
+.coordinator h3 {
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.coordinator p {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.coordinator strong {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 1.5% 0;
+}
+
+@media screen and (max-width: 600px) {
+  .coordinator h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .coordinator strong {
+    font-size: 1rem;
+  }
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,6 +299,7 @@ header img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 
 .coordination {
@@ -289,7 +319,7 @@ a.inline p {
 .coordination img,
 .inline_imgbox img {
   width: 100%;
-  min-height: 300px !important;
+  min-height: 200px !important;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -322,10 +352,6 @@ a.inline p {
 .inline_box div {
   width: 18%;
   padding: 1%;
-}
-
-ul.select {
-  /*margin-top: 3%;*/
 }
 
 /*ライトボックス*/
@@ -479,7 +505,7 @@ h2 {
           border-image: -webkit-gradient(linear, left top, right top, from(#40c2f0), to(#e85483));
           border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
   border-image-slice: 0 0 1;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 2%;
 }
 
@@ -517,7 +543,7 @@ h2 {
   .col_4 .coordination,
   .coordination,
   .null_box {
-    width: 48%;
+    width: 32%;
   }
 }
 
@@ -768,10 +794,11 @@ footer .menu-container .menu .menu-item a:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 15%;
   }
   .showrroom_list li {
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto;
   }
 }
 
