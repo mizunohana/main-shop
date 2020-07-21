@@ -34,6 +34,18 @@ main {
   order: 2;
 }
 
+main p.txt_center {
+  text-align: center;
+}
+
+main section {
+  margin: 5% 0;
+}
+
+main section:first-child {
+  margin-top: 0%;
+}
+
 aside {
   width: 18%;
   -webkit-box-ordinal-group: 1;
@@ -63,6 +75,9 @@ footer {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1;
+  }
+  main section {
+    margin-bottom: 15%;
   }
   aside {
     width: 100%;
@@ -261,7 +276,8 @@ header img {
   width: 32%;
 }
 
-.col_4 .coordination, .null_box {
+.col_4 .coordination,
+.null_box {
   width: 19%;
 }
 
@@ -270,7 +286,8 @@ a.inline p {
   margin-top: -2%;
 }
 
-.coordination img, .inline_imgbox img {
+.coordination img,
+.inline_imgbox img {
   width: 100%;
   min-height: 300px !important;
   border-radius: 10px;
@@ -497,7 +514,9 @@ h2 {
     width: 100%;
     height: 100%;
   }
-  .col_4 .coordination, .coordination, .null_box {
+  .col_4 .coordination,
+  .coordination,
+  .null_box {
     width: 48%;
   }
 }
@@ -721,7 +740,7 @@ footer .menu-container .menu .menu-item a:hover {
   line-height: 30px;
   margin-right: 2px;
   font-size: 1.1rem;
-  font-weight: 900;
+  font-weight: 500;
   padding: 10px;
   color: #fff;
   border-radius: 10px;
@@ -897,7 +916,7 @@ footer .menu-container .menu .menu-item a:hover {
           transform: translate(-50%, 0);
   letter-spacing: 0.05em;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
 }
@@ -1000,7 +1019,8 @@ aside img {
     width: 48%;
     height: 100%;
   }
-  aside h2, aside ul {
+  aside h2,
+  aside ul {
     display: none;
   }
 }
@@ -1368,5 +1388,109 @@ h3.showroom {
   font-size: 1.3rem;
   font-weight: 800;
   margin: 3% 0;
+}
+
+/* カタログページ */
+section.catalog {
+  text-align: center;
+}
+
+section.catalog h3 {
+  font-size: 1.25rem;
+  margin-bottom: 2%;
+  color: red;
+}
+
+section.catalog ul {
+  background-color: #F0F0F0;
+  padding: 1% 3%;
+  border-radius: 10px;
+}
+
+section.catalog li {
+  text-align: left;
+  line-height: 2;
+  list-style-image: url(../img/common/li_flower.png);
+}
+
+section.catalog div.btn {
+  width: 50%;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-weight: 500;
+}
+
+section.catalog div.btn:hover {
+  background: -webkit-linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
+  background: linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+section.catalog div.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section.catalog img {
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  section.catalog ul {
+    padding: 1% 3% 1% 7%;
+  }
+  section.catalog div.btn {
+    width: 80%;
+  }
+  section.catalog img {
+    width: 100%;
+  }
+}
+
+#dejikata h3 {
+  text-align: center;
+  padding-bottom: 2%;
+  color: #333;
+}
+
+#dejikata dl {
+  line-height: 1.5em;
+  clear: both;
+  position: relative;
+  background-color: #F0F0F0;
+  margin: 5% 0;
+  max-height: 150px;
+  overflow: scroll;
+  padding-top: 2%;
+  text-align: left;
+}
+
+#dejikata dt {
+  padding-left: .5em;
+  font-weight: 700;
+}
+
+#dejikata dd {
+  padding-left: .5em;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  #dejikata dt {
+    clear: left;
+    float: left;
+    width: 10%;
+    font-weight: 700;
+  }
+  #dejikata dd {
+    padding-left: .5em;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
