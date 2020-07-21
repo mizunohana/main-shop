@@ -60,7 +60,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 14px;
   }
@@ -770,6 +770,7 @@ footer .menu-container .menu .menu-item a:hover {
   padding: 10px;
   color: #fff;
   border-radius: 10px;
+  margin-bottom: 5%;
 }
 
 .showrroom_list li:hover {
@@ -777,6 +778,10 @@ footer .menu-container .menu .menu-item a:hover {
   background: linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.showrroom_list li:nth-child(3) {
+  margin-bottom: -50%;
 }
 
 .showrroom_list a {
@@ -1617,7 +1622,7 @@ button.readmore:hover::after {
 
 .list img {
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1626,7 +1631,7 @@ button.readmore:hover::after {
 
 @media screen and (max-width: 600px) {
   .list img {
-    height: 200px;
+    height: 180px;
   }
   .list li {
     width: calc(92% / 3);
