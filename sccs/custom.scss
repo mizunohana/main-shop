@@ -1603,7 +1603,7 @@ button.readmore:hover::after {
 }
 
 /*購入に関する注意とお願い*/
-.attention {
+.attention_doc {
   font-size: 1rem;
   line-height: 2;
   overflow-x: auto;
@@ -1627,7 +1627,7 @@ button.readmore:hover::after {
 
 }
 
-section.attention table {
+section.attention_doc table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
@@ -1635,51 +1635,51 @@ section.attention table {
   margin-top: 1%;
 }
 
-section.attention th,
-section.attention td {
+section.attention_doc th,
+section.attenattention_doction td {
   padding: 10px;
   border: 1px solid #ddd;
 }
 
-section.attention th {
+section.attention_doc th {
   background: #f4f4f4;
 }
 
-section.attention table td {
+section.attention_doc table td {
   text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-  section.attention table {
+  section.attention_doc table {
     display: block;
     width: 100%;
     margin: 0 -10px;
   }
 
-  section.attention table thead {
+  section.attention_doc table thead {
     display: block;
     float: left;
     overflow-x: scroll;
   }
 
-  section.attention table tbody {
+  section.attention_doc table tbody {
     display: block;
     width: auto;
     overflow-x: auto;
     white-space: nowrap;
   }
 
-  section.attention table th {
+  section.attention_doc table th {
     display: block;
     width: auto;
   }
 
-  section.attention table tbody tr {
+  section.attention_doc table tbody tr {
     display: inline-block;
     margin: 0 -3px;
   }
 
-  section.attention table td {
+  section.attention_doc table td {
     display: block;
   }
 }
