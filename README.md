@@ -7,12 +7,15 @@
 https://mizunohana.github.io/main-shop/item_banner.html
 
 
-## コーディネート一覧
+### コーディネート一覧
 
 https://mizunohana.github.io/main-shop/coordination.html
 
 
-## ショールーム
+### ショールーム
 https://mizunohana.github.io/main-shop/showroom.html
 
+
+### 問い合わせに関する個人情報保護について
+https://mizunohana.github.io/main-shop/personal_information.html
 
