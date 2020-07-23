@@ -1605,9 +1605,10 @@ button.readmore:hover::after {
 
 /*購入に関する注意とお願い*/
 .attention_doc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   overflow-x: auto;
+  margin: $margintb_5;
 
   ul {
     margin-left: 20px;
