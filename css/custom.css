@@ -1634,4 +1634,34 @@ button.readmore:hover::after {
     padding: 1%;
   }
 }
+
+/*個人情報の取り扱い*/
+.personal_info ol {
+  padding: 0 3%;
+}
+
+.personal_info li {
+  list-style: decimal;
+  line-height: 1.8;
+  margin-bottom: 2%;
+  margin-left: 20px;
+}
+
+.personal_info li span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.personal_info div {
+  border: 1px solid #aaa;
+  padding: 2%;
+}
+
+.personal_info div p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 1%;
+  border-bottom: #aaa 1px solid;
+}
 /*# sourceMappingURL=custom.css.map */

@@ -735,6 +735,7 @@ footer .menu-container .menu .menu-item a {
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
     }
   }
+
   a {
     text-decoration: none !important;
 
@@ -920,6 +921,7 @@ footer .menu-container .menu .menu-item a {
     }
   }
 }
+
 li {
   list-style: none;
 }
@@ -1515,9 +1517,9 @@ button.readmore:hover::after {
   flex-wrap: wrap;
   cursor: pointer;
   background-color: #f0f0f0;
-  padding:1%;
+  padding: 1%;
   border-radius: $border-radius;
-  margin :2% 0;
+  margin: 2% 0;
 }
 
 .search_item.is-active {
@@ -1535,13 +1537,13 @@ button.readmore:hover::after {
 .list {
   display: flex;
   flex-wrap: wrap;
-align-items:center;
- width: 100%;
+  align-items: center;
+  width: 100%;
 
 
   li {
-    width:calc(92% / 4);
-   padding:1%;
+    width: calc(92% / 4);
+    padding: 1%;
   }
 
   img {
@@ -1551,14 +1553,51 @@ align-items:center;
     object-fit: cover;
     font-family: 'object-fit: cover';
   }
+
   @media screen and (max-width: 600px) {
-    img{height: 180px;}
+    img {
+      height: 180px;
+    }
 
     li {
-      width:calc(92% / 3);
-     padding:1%;
+      width: calc(92% / 3);
+      padding: 1%;
     }
 
   }
 }
 
+
+/*個人情報の取り扱い*/
+
+.personal_info {
+
+  ol {
+    padding: 0 3%;
+  }
+
+  li {
+    list-style: decimal;
+    line-height: 1.8;
+    margin-bottom: 2%;
+    margin-left:20px;
+
+    span {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  div {
+    border: 1px solid #aaa;
+    padding: 2%;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding-bottom: 1%;
+      border-bottom: #aaa 1px solid;
+    }
+  }
+}
