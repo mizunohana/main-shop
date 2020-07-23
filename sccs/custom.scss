@@ -1002,7 +1002,7 @@ aside {
 }
 
 small {
-  font-size: .5em;
+  font-size: .8em;
 }
 
 /* SNS */
@@ -1580,7 +1580,7 @@ button.readmore:hover::after {
     list-style: decimal;
     line-height: 1.8;
     margin-bottom: 2%;
-    margin-left:20px;
+    margin-left: 20px;
 
     span {
       display: block;
@@ -1599,5 +1599,87 @@ button.readmore:hover::after {
       padding-bottom: 1%;
       border-bottom: #aaa 1px solid;
     }
+  }
+}
+
+/*購入に関する注意とお願い*/
+.attention {
+  font-size: 1rem;
+  line-height: 2;
+  overflow-x: auto;
+
+  ul {
+    margin-left: 20px;
+  }
+
+  ol {
+    margin-left: 20px;
+  }
+
+  li {
+    line-height: 2;
+    list-style-image: url(../img/common/li_flower.png);
+
+    .number {
+      list-style: decimal;
+    }
+  }
+
+}
+
+section.attention table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+  margin-top: 1%;
+}
+
+section.attention th,
+section.attention td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+section.attention th {
+  background: #f4f4f4;
+}
+
+section.attention table td {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  section.attention table {
+    display: block;
+    width: 100%;
+    margin: 0 -10px;
+  }
+
+  section.attention table thead {
+    display: block;
+    float: left;
+    overflow-x: scroll;
+  }
+
+  section.attention table tbody {
+    display: block;
+    width: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  section.attention table th {
+    display: block;
+    width: auto;
+  }
+
+  section.attention table tbody tr {
+    display: inline-block;
+    margin: 0 -3px;
+  }
+
+  section.attention table td {
+    display: block;
   }
 }
