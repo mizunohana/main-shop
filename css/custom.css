@@ -39,7 +39,8 @@ main p.txt_center {
 }
 
 main section {
-  margin: 5% 0;
+  font-size: 16px;
+  margin: 5% 0 !important;
 }
 
 main section:first-child {
@@ -1692,52 +1693,52 @@ button.readmore:hover::after {
 section.attention_doc table {
   width: 100% !important;
   border-collapse: collapse !important;
-  text-align: center;
-  table-layout: fixed;
-  margin-top: 1%;
+  text-align: center !important;
+  table-layout: fixed !important;
+  margin-top: 1% !important;
 }
 
 section.attention_doc th,
 section.attenattention_doction td {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 10px !important;
+  border: 1px solid #ddd !important;
 }
 
 section.attention_doc th {
-  background: #f4f4f4;
+  background: #f4f4f4 !important;
 }
 
 section.attention_doc table td {
-  text-align: center;
+  text-align: center !important;
 }
 
 @media only screen and (max-width: 600px) {
   section.attention_doc table {
-    display: block;
-    width: 100%;
-    margin: 0 -10px;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 -10px !important;
   }
   section.attention_doc table thead {
-    display: block;
-    float: left;
-    overflow-x: scroll;
+    display: block !important;
+    float: left !important;
+    overflow-x: scroll !important;
   }
   section.attention_doc table tbody {
-    display: block;
-    width: auto;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: block !important;
+    width: auto !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
   }
   section.attention_doc table th {
-    display: block;
-    width: auto;
+    display: block !important;
+    width: auto !important;
   }
   section.attention_doc table tbody tr {
-    display: inline-block;
-    margin: 0 -3px;
+    display: inline-block !important;
+    margin: 0 -3px !important;
   }
   section.attention_doc table td {
-    display: block;
+    display: block !important;
   }
 }
 /*# sourceMappingURL=custom.css.map */
