@@ -1605,7 +1605,7 @@ button.readmore:hover::after {
 
 /*購入に関する注意とお願い*/
 .attention_doc {
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 2;
   overflow-x: auto;
 
@@ -1637,7 +1637,7 @@ section.attention_doc table {
 }
 
 section.attention_doc th,
-section.attenattention_doction td {
+section.attention_doc td {
   padding: 10px !important;
   border: 1px solid #ddd !important;
 }
