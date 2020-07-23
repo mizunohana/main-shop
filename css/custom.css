@@ -1690,8 +1690,8 @@ button.readmore:hover::after {
 }
 
 section.attention_doc table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100% !important;
+  border-collapse: collapse !important;
   text-align: center;
   table-layout: fixed;
   margin-top: 1%;
