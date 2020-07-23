@@ -10,6 +10,9 @@ $margintb_5:5% 0;
 
 html {
   font-size: 16px !important;
+}
+
+body{
   font-family: 'M PLUS 1p', sans-serif;
   line-height: 1.5;
   color: #333;
@@ -41,7 +44,7 @@ main {
   }
 
   section {
-    margin: $margintb_5 !important;
+    margin: $margintb_5;
   }
 
   section:first-child {
@@ -262,7 +265,7 @@ header {
     color: #40c2f0;
     position: relative;
     text-align: center;
-    font-size: 3rem;
+    font-size: 50px;
     background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
     -webkit-background-clip: text; //テキストでくり抜く
     -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
@@ -275,19 +278,19 @@ header {
   }
 
   strong {
-    font-size: 1.2rem;
+    font-size: 20px;
     display: inline-block;
     margin: 1.5% 0;
   }
 
   @media screen and (max-width: 600px) {
     h3 {
-      font-size: 1.5rem;
+      font-size: 23px;
       line-height: 1.5;
     }
 
     strong {
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 }
@@ -659,7 +662,7 @@ footer .menu-container .menu .menu-item a {
 
   h4 {
     padding-bottom: .5em;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 750;
     text-align: center;
     border-bottom: #e85483 2px solid;
@@ -669,7 +672,7 @@ footer .menu-container .menu .menu-item a {
       display: block;
       margin-bottom: .2em;
       color: #aaa;
-      font-size: .8em;
+      font-size: 13px;
     }
   }
 
@@ -681,7 +684,7 @@ footer .menu-container .menu .menu-item a {
     min-width: 300px;
     max-width: 100%;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 21px;
     background: #03A9F4;
     text-align: center;
     border-radius: $border-radius;
@@ -704,7 +707,7 @@ footer .menu-container .menu .menu-item a {
 
 .acces {
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 .showrroom_list {
@@ -723,7 +726,7 @@ footer .menu-container .menu .menu-item a {
     height: 30px;
     line-height: 30px;
     margin-right: 2px;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 500;
     padding: 10px;
     color: #fff;
@@ -1164,13 +1167,13 @@ footer img {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10%;
   }
 
   ul {
-    font-size: .8rem;
+    font-size: 14px;
     padding-left: 15px;
   }
 
@@ -1381,7 +1384,7 @@ section.catalog {
     border-radius: $border-radius;
     height: 30px;
     line-height: 30px;
-    font-size: 1.1rem;
+    font-size: 16px;
     padding: 10px;
     font-weight: 500;
 
@@ -1584,7 +1587,7 @@ button.readmore:hover::after {
 
     span {
       display: block;
-      font-size: 1.1rem;
+      font-size: 18px;
       font-weight: 500;
     }
   }
@@ -1594,7 +1597,7 @@ button.readmore:hover::after {
     padding: 2%;
 
     p {
-      font-size: 1.2rem;
+      font-size: 18px;
       font-weight: 500;
       padding-bottom: 1%;
       border-bottom: #aaa 1px solid;
@@ -1609,7 +1612,7 @@ button.readmore:hover::after {
   overflow-x: auto;
   margin: $margintb_5;
 
-  h3{font-size: 1.1rem;
+  h3{font-size: 18px;
   font-weight: 750;}
 
   ul {

@@ -14,36 +14,11 @@
     <script src="./js/include_html.js"></script>
     <title>mizunohana | 購入に関する注意とお願い</title>
 
-    <script type="text/javascript">
-        jQuery(function ($) {
-            //コンテンツを非表示に
-            $(".accordion-content").css("display", "none");
-
-            //タイトルがクリックされたら
-            $(".js-accordion-title").click(function () {
-                //クリックしたjs-accordion-title以外の全てのopenを取る
-                $(".js-accordion-title").not(this).removeClass("open");
-                //クリックされたjs-accordion-title以外のcontentを閉じる
-                $(".js-accordion-title").not(this).next().slideUp(300);
-                //thisにopenクラスを付与
-                $(this).toggleClass("open");
-                //thisのcontentを展開、開いていれば閉じる
-                $(this).next().slideToggle(150);
-            });
-
-            /* 下記でもOK
-             $(".accordion-content").css("display", "none");
-             $(".js-accordion-title").click(function () {
-               $(".js-accordion-title").not(this).removeClass("open").next().slideUp(300);
-               $(this).toggleClass("open").next().slideToggle(300);
-             });
-             */
-        });
-    </script>
-
 </head>
 
 <body>
+
+    
 
     <!--ヘッダー読み込み-->
     <div id="include_header"></div>

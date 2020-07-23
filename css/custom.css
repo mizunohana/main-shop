@@ -7,6 +7,9 @@
 
 html {
   font-size: 16px !important;
+}
+
+body {
   font-family: 'M PLUS 1p', sans-serif;
   line-height: 1.5;
   color: #333;
@@ -39,7 +42,7 @@ main p.txt_center {
 }
 
 main section {
-  margin: 5% 0 !important;
+  margin: 5% 0;
 }
 
 main section:first-child {
@@ -254,7 +257,7 @@ header img {
   color: #40c2f0;
   position: relative;
   text-align: center;
-  font-size: 3rem;
+  font-size: 50px;
   background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -267,18 +270,18 @@ header img {
 }
 
 .coordinator strong {
-  font-size: 1.2rem;
+  font-size: 20px;
   display: inline-block;
   margin: 1.5% 0;
 }
 
 @media screen and (max-width: 600px) {
   .coordinator h3 {
-    font-size: 1.5rem;
+    font-size: 23px;
     line-height: 1.5;
   }
   .coordinator strong {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -696,7 +699,7 @@ footer .menu-container .menu .menu-item a:hover {
 
 .showroom_box h4 {
   padding-bottom: .5em;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 750;
   text-align: center;
   border-bottom: #e85483 2px solid;
@@ -707,7 +710,7 @@ footer .menu-container .menu .menu-item a:hover {
   display: block;
   margin-bottom: .2em;
   color: #aaa;
-  font-size: .8em;
+  font-size: 13px;
 }
 
 .showroom_box h5 {
@@ -718,7 +721,7 @@ footer .menu-container .menu .menu-item a:hover {
   min-width: 300px;
   max-width: 100%;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 21px;
   background: #03A9F4;
   text-align: center;
   border-radius: 10px;
@@ -740,7 +743,7 @@ footer .menu-container .menu .menu-item a:hover {
 
 .acces {
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 .showrroom_list {
@@ -765,7 +768,7 @@ footer .menu-container .menu .menu-item a:hover {
   height: 30px;
   line-height: 30px;
   margin-right: 2px;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   padding: 10px;
   color: #fff;
@@ -1225,13 +1228,13 @@ footer img {
 }
 
 #include_footer_inner p {
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 10%;
 }
 
 #include_footer_inner ul {
-  font-size: .8rem;
+  font-size: 14px;
   padding-left: 15px;
 }
 
@@ -1448,7 +1451,7 @@ section.catalog div.btn {
   border-radius: 10px;
   height: 30px;
   line-height: 30px;
-  font-size: 1.1rem;
+  font-size: 16px;
   padding: 10px;
   font-weight: 500;
 }
@@ -1649,7 +1652,7 @@ button.readmore:hover::after {
 
 .personal_info li span {
   display: block;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -1659,7 +1662,7 @@ button.readmore:hover::after {
 }
 
 .personal_info div p {
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
   padding-bottom: 1%;
   border-bottom: #aaa 1px solid;
@@ -1674,7 +1677,7 @@ button.readmore:hover::after {
 }
 
 .attention_doc h3 {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 750;
 }
 
