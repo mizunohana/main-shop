@@ -1673,6 +1673,11 @@ button.readmore:hover::after {
   margin: 5% 0;
 }
 
+.attention_doc h3 {
+  font-size: 1.1rem;
+  font-weight: 750;
+}
+
 .attention_doc ul {
   margin-left: 20px;
 }
