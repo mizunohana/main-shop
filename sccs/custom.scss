@@ -12,7 +12,7 @@ html {
   font-size: 16px !important;
 }
 
-body{
+body {
   font-family: 'M PLUS 1p', sans-serif;
   line-height: 1.5;
   color: #333;
@@ -1612,8 +1612,10 @@ button.readmore:hover::after {
   overflow-x: auto;
   margin: $margintb_5;
 
-  h3{font-size: 18px;
-  font-weight: 750;}
+  h3 {
+    font-size: 18px;
+    font-weight: 750;
+  }
 
   ul {
     margin-left: 20px;
@@ -1658,7 +1660,7 @@ section.attention_doc table td {
 
 @media only screen and (max-width: 600px) {
   section.attention_doc table {
-    display: block!important;
+    display: block !important;
     width: 100% !important;
     margin: 0 -10px !important;
   }
@@ -1689,4 +1691,91 @@ section.attention_doc table td {
   section.attention_doc table td {
     display: block !important;
   }
+}
+
+/*個人情報保護方針*/
+section.protec {
+  section {
+    margin: 5% 0;
+    padding: 1%;
+  }
+
+  div {
+    margin: 2% 0;
+  }
+
+  div.tex_right {
+    text-align: right;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 750;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+
+  li {
+    list-style: decimal;
+    margin: 2% 0;
+
+    span {
+      font-weight: bold;
+      display: block;
+    }
+  }
+
+  dl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #aaa;
+    text-align: center;
+
+
+  &.first{
+      font-weight: bold;
+      border-top: solid 1px #aaa;
+    }
+
+  }
+
+  dt {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  dd {
+    width: 65%;
+    border-left: 1px solid #aaa;
+  }
+
+  dt,dd{padding: 1%;}
+
+  @media only screen and (max-width: 600px) {
+
+    dl{display: block ; border: 0px;
+      &.first{display: none;}
+    }
+    dt,dd{width: 95%; border: 0px;}
+    dt{background-color: #aaa; height: 20px; padding-top: 5px;}
+    dd{margin: 2% 0;}
+  }
+
+  div.madoguchi {
+    border: 1px solid #aaa;
+    padding: 2%;
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      padding-bottom: 1%;
+      border-bottom: #aaa 1px solid;
+    }
+  }
+
 }

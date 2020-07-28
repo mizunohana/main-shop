@@ -1749,4 +1749,111 @@ section.attention_doc table td {
     display: block !important;
   }
 }
+
+/*個人情報保護方針*/
+section.protec section {
+  margin: 5% 0;
+  padding: 1%;
+}
+
+section.protec div {
+  margin: 2% 0;
+}
+
+section.protec div.tex_right {
+  text-align: right;
+}
+
+section.protec h3 {
+  font-size: 16px;
+  font-weight: 750;
+}
+
+section.protec ol {
+  padding-left: 20px;
+}
+
+section.protec li {
+  list-style: decimal;
+  margin: 2% 0;
+}
+
+section.protec li span {
+  font-weight: bold;
+  display: block;
+}
+
+section.protec dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px #aaa;
+  text-align: center;
+}
+
+section.protec dl.first {
+  font-weight: bold;
+  border-top: solid 1px #aaa;
+}
+
+section.protec dt {
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+
+section.protec dd {
+  width: 65%;
+  border-left: 1px solid #aaa;
+}
+
+section.protec dt, section.protec dd {
+  padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  section.protec dl {
+    display: block;
+    border: 0px;
+  }
+  section.protec dl.first {
+    display: none;
+  }
+  section.protec dt, section.protec dd {
+    width: 95%;
+    border: 0px;
+  }
+  section.protec dt {
+    background-color: #aaa;
+    height: 20px;
+    padding-top: 5px;
+  }
+  section.protec dd {
+    margin: 2% 0;
+  }
+}
+
+section.protec div.madoguchi {
+  border: 1px solid #aaa;
+  padding: 2%;
+}
+
+section.protec div.madoguchi p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 1%;
+  border-bottom: #aaa 1px solid;
+}
 /*# sourceMappingURL=custom.css.map */
