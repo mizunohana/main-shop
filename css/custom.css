@@ -6,13 +6,17 @@
 }
 
 html {
-  font-size: 16px !important;
+  font-size: 62.3%;
 }
 
 body {
-  font-family: 'M PLUS 1p', sans-serif;
-  line-height: 1.5;
   color: #333;
+  font-size: 1.6rem;
+  /*16px*/
+  font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 div.container {
@@ -270,18 +274,18 @@ header img {
 }
 
 .coordinator strong {
-  font-size: 20px;
+  font-size: 2.0rem;
   display: inline-block;
   margin: 1.5% 0;
 }
 
 @media screen and (max-width: 600px) {
   .coordinator h3 {
-    font-size: 23px;
+    font-size: 2.3rem;
     line-height: 1.5;
   }
   .coordinator strong {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -640,7 +644,7 @@ footer .menu-container .menu .menu-item a:hover {
   font-weight: bold;
   color: #03A9F4;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .btn-cross:before, .btn-cross:after {
@@ -699,7 +703,7 @@ footer .menu-container .menu .menu-item a:hover {
 
 .showroom_box h4 {
   padding-bottom: .5em;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 750;
   text-align: center;
   border-bottom: #e85483 2px solid;
@@ -710,7 +714,7 @@ footer .menu-container .menu .menu-item a:hover {
   display: block;
   margin-bottom: .2em;
   color: #aaa;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .showroom_box h5 {
@@ -721,7 +725,7 @@ footer .menu-container .menu .menu-item a:hover {
   min-width: 300px;
   max-width: 100%;
   color: #fff;
-  font-size: 21px;
+  font-size: 2.0rem;
   background: #03A9F4;
   text-align: center;
   border-radius: 10px;
@@ -743,7 +747,7 @@ footer .menu-container .menu .menu-item a:hover {
 
 .acces {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .showrroom_list {
@@ -768,7 +772,7 @@ footer .menu-container .menu .menu-item a:hover {
   height: 30px;
   line-height: 30px;
   margin-right: 2px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 10px;
   color: #fff;
@@ -1069,7 +1073,7 @@ small {
   display: inline-block;
   width: 66px;
   height: 58px;
-  font-size: 30px;
+  font-size: 3.0rem;
   color: #fff !important;
   -webkit-transition: .5s;
   transition: .5s;
@@ -1228,13 +1232,13 @@ footer img {
 }
 
 #include_footer_inner p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 10%;
 }
 
 #include_footer_inner ul {
-  font-size: 14px;
+  font-size: 1.4rem;
   padding-left: 15px;
 }
 
@@ -1451,7 +1455,7 @@ section.catalog div.btn {
   border-radius: 10px;
   height: 30px;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 10px;
   font-weight: 500;
 }
@@ -1670,14 +1674,14 @@ button.readmore:hover::after {
 
 /*購入に関する注意とお願い*/
 .attention_doc {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2;
   overflow-x: auto;
   margin: 5% 0;
 }
 
 .attention_doc h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 750;
 }
 
@@ -1765,7 +1769,7 @@ section.protec div.tex_right {
 }
 
 section.protec h3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 750;
 }
 
@@ -1851,7 +1855,7 @@ section.protec div.madoguchi {
 }
 
 section.protec div.madoguchi p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-bottom: 1%;
   border-bottom: #aaa 1px solid;
