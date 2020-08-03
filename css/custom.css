@@ -1428,11 +1428,11 @@ h3.showroom {
 /* カタログページ */
 section.catalog {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 section.catalog h3 {
-  font-size: 1.25rem;
+  font-size: 2.0rem;
   margin-bottom: 2%;
   color: red;
 }
@@ -1454,11 +1454,11 @@ section.catalog div.btn {
   background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   border-radius: 10px;
-  height: 30px;
+  height: 45px;
   line-height: 30px;
   font-size: 1.6rem;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 750;
 }
 
 section.catalog div.btn:hover {

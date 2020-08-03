@@ -1363,10 +1363,10 @@ h3.showroom {
 
 section.catalog {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 16px;
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 2.0rem;
     margin-bottom: 2%;
     color: red;
   }
@@ -1387,11 +1387,11 @@ section.catalog {
     width: 50%;
     background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
     border-radius: $border-radius;
-    height: 30px;
+    height: 45px;
     line-height: 30px;
     font-size: 1.6rem;
     padding: 10px;
-    font-weight: 500;
+    font-weight: 750;
 
     &:hover {
       background: linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
