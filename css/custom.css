@@ -503,7 +503,7 @@ a.inline p {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 25px;
   width: 100%;
   position: relative;
   border-bottom: 3px solid;
@@ -1863,7 +1863,7 @@ section.protec div.madoguchi p {
   border-bottom: #aaa 1px solid;
 }
 
-#sysWrap {
+#catalog #sysWrap {
   margin-top: 0;
 }
 /*# sourceMappingURL=custom.css.map */
