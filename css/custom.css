@@ -32,6 +32,10 @@ div.container {
   margin: 0 auto;
 }
 
+p.txt_center {
+  text-align: center;
+}
+
 main {
   width: 78%;
   margin: 0 auto;
@@ -40,10 +44,6 @@ main {
   -ms-flex-order: 2;
   -webkit-order: 2;
   order: 2;
-}
-
-main p.txt_center {
-  text-align: center;
 }
 
 main section {
