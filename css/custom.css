@@ -67,9 +67,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  /*
   body {
     font-size: 14px !important;
   }
+*/
   div.container {
     width: 95%;
   }
@@ -692,6 +694,10 @@ footer .menu-container .menu .menu-item a:hover {
 
 .sr_info {
   text-align: center;
+}
+
+.showroom_box {
+  font-size: 1.6rem;
 }
 
 .showroom_box img {

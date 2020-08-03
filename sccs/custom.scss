@@ -16,7 +16,7 @@ html {
 
 body {
   color: #333;
-  font-size: 1.6rem;
+  font-size: $font-size-16;
   //16px
   font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
   background-color: #fff;
@@ -77,9 +77,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+ /*
   body {
     font-size: 14px !important;
   }
+*/
 
   div.container {
     width: 95%;
@@ -664,6 +666,7 @@ footer .menu-container .menu .menu-item a {
 }
 
 .showroom_box {
+  font-size: $font-size-16;
   img {
     object-fit: cover;
     font-family: 'object-fit: cover';
