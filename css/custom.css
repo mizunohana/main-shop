@@ -1428,6 +1428,7 @@ h3.showroom {
 /* カタログページ */
 section.catalog {
   text-align: center;
+  font-size: 1.6rem;
 }
 
 section.catalog h3 {
