@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/*
 html {
   font-size: 62.3%;
 }
@@ -12,12 +13,13 @@ html {
 body {
   color: #333;
   font-size: 1.6rem;
+  //16px
   font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*/
 div.container {
   width: 80%;
   display: -webkit-box;
