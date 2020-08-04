@@ -1928,7 +1928,7 @@ section.oteire span {
 }
 
 /*コンテンツ下共通バナー*/
-.attention_banner {
+section.attention_banner {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1940,21 +1940,21 @@ section.oteire span {
   margin: 5% 0;
 }
 
-.attention_banner div {
+section.attention_banner div {
   width: 50%;
 }
 
-.attention_banner img {
+section.attention_banner img {
   width: 100%;
 }
 
-.attention_banner img:hover {
+section.attention_banner img:hover {
   -webkit-box-shadow: 0px 0px 10px #999;
           box-shadow: 0px 0px 10px #999;
 }
 
 @media only screen and (max-width: 600px) {
-  .attention_banner {
+  section.attention_banner {
     width: 98%;
     margin: 0 auto;
   }
