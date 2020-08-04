@@ -1873,6 +1873,7 @@ section.protec div.madoguchi p {
   margin-top: 0;
 }
 
+/*お手入れ方法*/
 section.oteire {
   font-size: 1.6rem;
   line-height: 2;
@@ -1908,12 +1909,14 @@ section.oteire h4 {
   font-weight: bolder;
 }
 
-section.oteire p, section.oteire h4 {
+section.oteire p,
+section.oteire h4 {
   padding-left: 32px;
 }
 
 section.oteire img {
   width: 100%;
+  margin-bottom: 3%;
 }
 
 section.oteire span {
