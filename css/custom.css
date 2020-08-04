@@ -1829,7 +1829,8 @@ section.protec dd {
   border-left: 1px solid #aaa;
 }
 
-section.protec dt, section.protec dd {
+section.protec dt,
+section.protec dd {
   padding: 1%;
 }
 
@@ -1841,7 +1842,8 @@ section.protec dt, section.protec dd {
   section.protec dl.first {
     display: none;
   }
-  section.protec dt, section.protec dd {
+  section.protec dt,
+  section.protec dd {
     width: 95%;
     border: 0px;
   }
@@ -1869,5 +1871,55 @@ section.protec div.madoguchi p {
 
 #catalog #sysWrap {
   margin-top: 0;
+}
+
+section.oteire {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+section.oteire h3 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+section.oteire h3 {
+  position: relative;
+  padding: 1rem 2rem 1rem 4rem;
+  color: #fff;
+  border-radius: 100vh 0 0 100vh;
+  background: #427eff;
+}
+
+section.oteire h3:before {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+}
+
+section.oteire h4 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+section.oteire p, section.oteire h4 {
+  padding-left: 32px;
+}
+
+section.oteire img {
+  width: 100%;
+}
+
+section.oteire span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ffff66));
+  background: -webkit-linear-gradient(transparent 60%, #ffff66 60%);
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+  font-weight: 600;
 }
 /*# sourceMappingURL=custom.css.map */

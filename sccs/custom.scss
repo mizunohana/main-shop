@@ -51,7 +51,7 @@ main {
   -webkit-order: 2;
   order: 2;
 
- 
+
   section {
     margin: $margintb_5;
   }
@@ -77,7 +77,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
- /*
+  /*
   body {
     font-size: 14px !important;
   }
@@ -667,6 +667,7 @@ footer .menu-container .menu .menu-item a {
 
 .showroom_box {
   font-size: $font-size-16;
+
   img {
     object-fit: cover;
     font-family: 'object-fit: cover';
@@ -1741,7 +1742,7 @@ section.protec {
     }
   }
 
-  dl{
+  dl {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1750,7 +1751,7 @@ section.protec {
     text-align: center;
 
 
-  &.first{
+    &.first {
       font-weight: bold;
       border-top: solid 1px #aaa;
     }
@@ -1768,16 +1769,37 @@ section.protec {
     border-left: 1px solid #aaa;
   }
 
-  dt,dd{padding: 1%;}
+  dt,
+  dd {
+    padding: 1%;
+  }
 
   @media only screen and (max-width: 600px) {
 
-    dl{display: block ; border: 0px;
-      &.first{display: none;}
+    dl {
+      display: block;
+      border: 0px;
+
+      &.first {
+        display: none;
+      }
     }
-    dt,dd{width: 95%; border: 0px;}
-    dt{background-color: #aaa; height: 20px; padding-top: 5px;}
-    dd{margin: 2% 0;}
+
+    dt,
+    dd {
+      width: 95%;
+      border: 0px;
+    }
+
+    dt {
+      background-color: #aaa;
+      height: 20px;
+      padding-top: 5px;
+    }
+
+    dd {
+      margin: 2% 0;
+    }
   }
 
   div.madoguchi {
@@ -1794,6 +1816,58 @@ section.protec {
 
 }
 
-#catalog #sysWrap{
-  margin-top:0;
+#catalog #sysWrap {
+  margin-top: 0;
+}
+
+/*お手入れ方法*/
+
+section.oteire {
+  font-size: $font-size-16;
+  line-height: 2;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-bottom: 3%;
+  }
+
+  h3 {
+    position: relative;
+    //display: inline-block;
+    padding: 1rem 2rem 1rem 4rem;
+    color: #fff;
+    border-radius: 100vh 0 0 100vh;
+    background: #427eff;
+  }
+
+  h3:before {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    content: '';
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+
+  p,
+  h4 {
+    padding-left: 32px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+    font-weight: 600;
+  }
 }
