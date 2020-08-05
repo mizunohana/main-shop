@@ -1869,8 +1869,12 @@ section.protec div.madoguchi p {
   border-bottom: #aaa 1px solid;
 }
 
-#catalog #sysWrap {
-  margin-top: 0;
+div#sysMain {
+  float: right;
+  width: 900px;
+  margin: 20px auto;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 /*お手入れ方法*/
