@@ -1869,6 +1869,7 @@ section.protec div.madoguchi p {
   border-bottom: #aaa 1px solid;
 }
 
+/*テンプレート下層ページ調整*/
 div#sysMain {
   float: right;
   width: 900px;
