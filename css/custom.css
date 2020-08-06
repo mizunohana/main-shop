@@ -2095,4 +2095,9 @@ div#sysMain {
   background: #E95383 url(/img/layout/system/btn_cart2.png) center center no-repeat;
   background-size: 127px;
 }
+
+/*固定のページのh1タグ英語をけす*/
+.sysHeadline b {
+  display: none !important;
+}
 /*# sourceMappingURL=custom.css.map */
