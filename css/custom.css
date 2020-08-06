@@ -1987,8 +1987,8 @@ div#sysMain {
   font-weight: bold;
   font-size: 12px;
   border-radius: 20px;
-  border: 1px solid #E95383;
-  background: #E95383;
+  border: 1px solid #E95383 !important;
+  background: #E95383 !important;
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -2051,7 +2051,7 @@ div#sysMain {
 
 .h_cart .sysCartInfoCartIn a {
   display: block;
-  background: #E95383;
+  background: #E95383 !important;
   color: #fff;
   width: 100%;
   margin: 10px 0% 5px;
@@ -2064,7 +2064,7 @@ div#sysMain {
 }
 
 .h_cart .sysCartInfoCartIn a:hover {
-  background: #F2A5C4;
+  background: #F2A5C4 !important;
 }
 
 .h_cart .sysCartInfoCartIn a img {
