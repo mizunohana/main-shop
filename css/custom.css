@@ -1973,7 +1973,7 @@ div#sysMain {
 }
 
 .side_search .sysSearchButton {
-  background: #5D5D5D !important;
+  background-color: #5D5D5D !important;
   background-image: url(/img/common/ico_search.png) no-repeat center center;
 }
 
@@ -2077,5 +2077,22 @@ div#sysMain {
 
 .h_cart .sysCartInfoCartIn a i {
   margin-right: 5px;
+}
+
+/*カートに入れる*/
+#sysItemDetail .sysCartButton {
+  padding: 23px 15px !important;
+  text-indent: -999px;
+  background: #E95383 url(/img/layout/system/btn_cart.png) center center no-repeat;
+  background-size: 140px;
+}
+
+#sysItemDetail .sysCartButton:hover {
+  opacity: 0.8;
+}
+
+#sysItemDetail .sysGoCartButton {
+  background: #E95383 url(/img/layout/system/btn_cart2.png) center center no-repeat;
+  background-size: 127px;
 }
 /*# sourceMappingURL=custom.css.map */
