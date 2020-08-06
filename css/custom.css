@@ -1869,15 +1869,6 @@ section.protec div.madoguchi p {
   border-bottom: #aaa 1px solid;
 }
 
-/*テンプレート下層ページ調整*/
-div#sysMain {
-  float: right;
-  width: 900px;
-  margin: 20px auto;
-  padding: 0 !important;
-  border: 0 !important;
-}
-
 /*お手入れ方法*/
 section.oteire {
   font-size: 1.6rem;
@@ -1963,5 +1954,21 @@ section.attention_banner img:hover {
     width: 98%;
     margin: 0 auto;
   }
+}
+
+/*テンプレート下層ページ調整*/
+div#sysMain {
+  float: right;
+  width: 900px;
+  margin: 20px auto;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+#sysWrap {
+  max-width: 1100px;
+  margin: 0 auto 0 !important;
+  padding: 0;
+  overflow: hidden;
 }
 /*# sourceMappingURL=custom.css.map */
