@@ -1919,3 +1919,92 @@ div#sysMain {
   padding: 0;
   overflow: hidden;
 }
+
+.side_search .sysSearchButton{
+  background: #5D5D5D url(/img/common/ico_search.png) no-repeat center center !important;
+}
+
+#cartInfo{
+  float: left;
+  position: relative;
+  margin-top: 24px;
+  margin-left: 5px;
+  width: 120px;
+  height: 30px;
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid #E95383;
+  background: #E95383;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding-top: -10px;
+}
+#cartInfo p.cartTxt{
+  margin: -2px;
+  line-height: 21px;
+  padding-top: 5px;
+  font-size: 10px;
+}
+#cartInfo p img{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+#cartInfo i{
+  margin-right: 5px;
+}
+.h_cart{
+  display: none;
+  width: 280px;
+  height: 145px;
+  position: absolute;
+  top: 40px; right: 5px;
+  border: 1px solid #aaa;
+  background: #fff;
+  color: #333;
+  z-index: 110;
+  padding: 10px 20px;
+}
+.h_cart dl{
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.h_cart dl:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.h_cart dt, .h_cart dd{float: left;}
+.h_cart dd span{
+  display: inline-block;
+  color: #da4636;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.h_cart .sysCartInfoCartIn a{
+  display: block;
+  background: #E95383;
+  color: #fff;
+  width: 100%;
+  margin: 10px 0% 5px;
+  height: 50px;
+  padding: 12px 0 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius:5px;
+}
+.h_cart .sysCartInfoCartIn a:hover{
+  background:#F2A5C4;
+}
+.h_cart .sysCartInfoCartIn a img{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.h_cart .sysCartInfoCartIn a i{margin-right: 5px;}
