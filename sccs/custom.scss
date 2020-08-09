@@ -2055,8 +2055,43 @@ margin-top: 5% !important;
 .sysMemberAgreementFormLabel{
   font-size: 2rem;
   font-weight: 700;
+  display: block;
+}
+
+.sysMemberAgreement{
+  padding: 1%;
 }
 
 h1.sysHeadline{
   padding-top: 5%;
+}
+
+.sysTitle span, .sysHeadline span{
+margin: 0;
+padding: 0;
+}
+
+#sysMain .sysFormLabel{
+  display:block;
+  border-left: 5px solid #40c2f0;
+  padding-left: 5px;
+  line-height: 25px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top:3%;
+  padding-top: 5px;
+  font-weight: 700;
+}
+
+#sysMypageReminder #sysMain input[type="text"],
+#sysMemberRegisterIndex #sysMain input[type="text"],
+#sysFormIndex #sysMain input[type="text"],
+#sysFormIndex #sysMain textarea {
+        background: #fff;
+        border-radius: 0;
+        margin: 10px 0 10px !important;
+}
+
+.sysButton{
+  margin-bottom: 5%;
 }
