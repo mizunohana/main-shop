@@ -1359,6 +1359,7 @@ hr {
 .accordion-content {
   margin-bottom: 5%;
   line-height: 1.8;
+  font-size: 1.6rem;
 }
 
 /* CSS for CodePen */
