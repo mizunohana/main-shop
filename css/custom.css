@@ -1656,6 +1656,7 @@ button.readmore:hover::after {
 .personal_info h3 {
   font-size: 1.8rem;
   font-weight: 750;
+  margin: 3% 0;
 }
 
 .personal_info ol {
@@ -1675,7 +1676,7 @@ button.readmore:hover::after {
   font-weight: 500;
 }
 
-.personal_info li .tex_right {
+.personal_info li p.tex_right {
   text-align: right;
 }
 

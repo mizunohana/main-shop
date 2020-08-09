@@ -1594,6 +1594,7 @@ button.readmore:hover::after {
   h3 {
     font-size: 1.8rem;
     font-weight: 750;
+    margin: 3% 0;
   }
 
   ol {
@@ -1612,7 +1613,7 @@ button.readmore:hover::after {
       font-weight: 500;
     }
 
-    .tex_right {
+    p.tex_right {
       text-align: right;
     }
 
