@@ -2118,4 +2118,10 @@ div#sysMain {
 .sysTitle b, .sysHeadline b {
   display: none;
 }
+
+/*特定方テーブルレイアウト*/
+#main_tradelaw, .main_tradelaw {
+  font-size: 1.6rem;
+  margin-top: 5%;
+}
 /*# sourceMappingURL=custom.css.map */
