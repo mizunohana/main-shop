@@ -1649,6 +1649,10 @@ button.readmore:hover::after {
 }
 
 /*個人情報の取り扱い*/
+.personal_info {
+  font-size: 1.6rem;
+}
+
 .personal_info ol {
   padding: 0 3%;
 }
