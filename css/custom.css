@@ -2100,4 +2100,8 @@ div#sysMain {
 .sysHeadline b {
   display: none !important;
 }
+
+.sysTitle b, .sysHeadline b {
+  display: none;
+}
 /*# sourceMappingURL=custom.css.map */
