@@ -1675,7 +1675,7 @@ button.readmore:hover::after {
   font-weight: 500;
 }
 
-.personal_info li div.tex_right {
+.personal_info li .tex_right {
   text-align: right;
 }
 
