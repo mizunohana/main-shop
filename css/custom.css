@@ -1453,7 +1453,7 @@ section.catalog ul {
 section.catalog li {
   text-align: left;
   line-height: 2;
-  list-style-image: url(../img/common/li_flower.png);
+  list-style-image: url(/img/common/li_flower.png);
 }
 
 section.catalog div.btn {
@@ -1717,7 +1717,7 @@ button.readmore:hover::after {
 
 .attention_doc li {
   line-height: 2;
-  list-style-image: url(../img/common/li_flower.png);
+  list-style-image: url(/img/common/li_flower.png);
 }
 
 .attention_doc li .number {

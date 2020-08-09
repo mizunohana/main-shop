@@ -1390,7 +1390,7 @@ section.catalog {
   li {
     text-align: left;
     line-height: 2;
-    list-style-image: url(../img/common/li_flower.png);
+    list-style-image: url(/img/common/li_flower.png);
   }
 
   div.btn {
@@ -1654,7 +1654,7 @@ button.readmore:hover::after {
 
   li {
     line-height: 2;
-    list-style-image: url(../img/common/li_flower.png);
+    list-style-image: url(/img/common/li_flower.png);
 
     .number {
       list-style: decimal;

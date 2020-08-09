@@ -15,31 +15,30 @@
   <title>mizunohana | mizunohana SELECT コーディネート事例 </title>
 
   <script type="text/javascript">
-  jQuery(function ($) {
-    //コンテンツを非表示に
-    $(".accordion-content").css("display", "none");
-    
-    //タイトルがクリックされたら
-    $(".js-accordion-title").click(function () {
-      //クリックしたjs-accordion-title以外の全てのopenを取る
-      $(".js-accordion-title").not(this).removeClass("open");
-      //クリックされたjs-accordion-title以外のcontentを閉じる
-      $(".js-accordion-title").not(this).next().slideUp(300);
-      //thisにopenクラスを付与
-      $(this).toggleClass("open");
-      //thisのcontentを展開、開いていれば閉じる
-      $(this).next().slideToggle(150);
+    jQuery(function ($) {
+      //コンテンツを非表示に
+      $(".accordion-content").css("display", "none");
+
+      //タイトルがクリックされたら
+      $(".js-accordion-title").click(function () {
+        //クリックしたjs-accordion-title以外の全てのopenを取る
+        $(".js-accordion-title").not(this).removeClass("open");
+        //クリックされたjs-accordion-title以外のcontentを閉じる
+        $(".js-accordion-title").not(this).next().slideUp(300);
+        //thisにopenクラスを付与
+        $(this).toggleClass("open");
+        //thisのcontentを展開、開いていれば閉じる
+        $(this).next().slideToggle(150);
+      });
+
+      /* 下記でもOK
+       $(".accordion-content").css("display", "none");
+       $(".js-accordion-title").click(function () {
+         $(".js-accordion-title").not(this).removeClass("open").next().slideUp(300);
+         $(this).toggleClass("open").next().slideToggle(300);
+       });
+       */
     });
-    
-    /* 下記でもOK
-     $(".accordion-content").css("display", "none");
-     $(".js-accordion-title").click(function () {
-       $(".js-accordion-title").not(this).removeClass("open").next().slideUp(300);
-       $(this).toggleClass("open").next().slideToggle(300);
-     });
-     */
-  });
-  
   </script>
 
 </head>
@@ -59,9 +58,9 @@
 
         <h2>カテゴリーから探す</h2>
         <ul class="qa_list">
-         <li> <a href="#shop">▶お買い物について</a></li>
-         <li> <a href="#item">▶商品について</a></li>
-         <li> <a href="#">▶mizunohanaについて</a></li>
+          <li> <a href="#shop">▶お買い物について</a></li>
+          <li> <a href="#item">▶商品について</a></li>
+          <li> <a href="#">▶mizunohanaについて</a></li>
         </ul>
         <hr>
         <h2 id="shop">お買い物について</h2>
@@ -70,8 +69,8 @@
           <h3 class="accordion-title js-accordion-title">会員登録をしなくても変えますか？</h3>
           <div class="accordion-content">
             <div>ご購入は会員登録が必要になります。<br>
-            まだ、会員登録がお済みでない場合、 <a href="https://ssl.aispr.jp/mizunohana/member/">こちら</a>から会員登録をお願い致します。<br>
-          <a href="https://ssl.aispr.jp/mizunohana/member/">▶新規会員登録</a></div>
+              まだ、会員登録がお済みでない場合、 <a href="https://ssl.aispr.jp/mizunohana/member/">こちら</a>から会員登録をお願い致します。<br>
+              <a href="https://ssl.aispr.jp/mizunohana/member/">▶新規会員登録</a></div>
           </div>
           <h3 class="accordion-title js-accordion-title">電話で問い合わせはできますか？</h3>
           <div class="accordion-content">
