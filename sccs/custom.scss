@@ -1591,6 +1591,11 @@ button.readmore:hover::after {
 .personal_info {
   font-size: $font-size-16;
 
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 750;
+  }
+
   ol {
     padding: 0 3%;
   }
@@ -1606,6 +1611,11 @@ button.readmore:hover::after {
       font-size: 18px;
       font-weight: 500;
     }
+
+    div.tex_right {
+      text-align: right;
+    }
+
   }
 
   div {

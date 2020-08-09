@@ -1653,6 +1653,11 @@ button.readmore:hover::after {
   font-size: 1.6rem;
 }
 
+.personal_info h3 {
+  font-size: 1.8rem;
+  font-weight: 750;
+}
+
 .personal_info ol {
   padding: 0 3%;
 }
@@ -1668,6 +1673,10 @@ button.readmore:hover::after {
   display: block;
   font-size: 18px;
   font-weight: 500;
+}
+
+.personal_info li div.tex_right {
+  text-align: right;
 }
 
 .personal_info div {
