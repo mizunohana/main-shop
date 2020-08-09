@@ -5,19 +5,21 @@
   padding: 0;
 }
 
+/*
 html {
   font-size: 62.3%;
 }
 
 body {
   color: #333;
-  font-size: 1.6rem;
+  font-size: $font-size-16;
+  //16px
   font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*/
 div.container {
   width: 80%;
   display: -webkit-box;
@@ -2122,5 +2124,11 @@ div#sysMain {
 /*特定方テーブルレイアウト*/
 #main_tradelaw, .main_tradelaw {
   margin-top: 5% !important;
+}
+
+/* 新規会員登録 */
+.sysMemberAgreementFormLabel {
+  font-size: 2rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=custom.css.map */
