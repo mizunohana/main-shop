@@ -2228,4 +2228,20 @@ h1.sysHeadline {
     margin: 0 auto;
   }
 }
+
+/*メールフォーム*/
+.col2Style .sysHeadline {
+  text-align: center;
+}
+
+#sysFormIndex #sysMain,
+#sysFormConfirm #sysMain,
+#sysFormThanks #sysMain,
+.sysMemberRegister #sysMain,
+.sysMypage #sysMain {
+  width: 1100px;
+  border: 0px solid #eee;
+  padding: 20px 150px !important;
+  margin: 0 !important;
+}
 /*# sourceMappingURL=custom.css.map */
