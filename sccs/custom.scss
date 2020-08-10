@@ -1946,6 +1946,13 @@ div#sysMain {
   border: 0 !important;
 }
 
+@media only screen and (max-width: 600px) {
+
+  div#sysMain {
+    padding-top: 15%;
+  }
+}
+
 #sysWrap {
   max-width: 1100px;
   margin: 0 auto 0 !important;
@@ -2152,13 +2159,25 @@ h1.sysHeadline {
   .qa_list a,
   .accordion-content,
   .showroom_box,
-  .fatfooterWrap div li a
-    {
+  .fatfooterWrap div li a {
     font-size: $font-size-sp;
   }
 
   .fatfooterWrap div h5,
-  .btn-cross
-  {font-size: 1,6rem;}
+  .btn-cross {
+    font-size: 1, 6rem;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+.sysCart #sysMain,
+.sysMypage div#sysMain,
+.sysMemberRegister #sysMain,
+#sysItemSearch div#sysMain{
+    width: 98% !important;
+    padding: 70px 10px 30px !important;
+    margin:0 auto;
+}
 
 }
