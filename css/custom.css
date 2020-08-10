@@ -716,6 +716,7 @@ footer .menu-container .menu .menu-item a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   font-family: 'object-fit: cover';
+  margin: 3% 0;
 }
 
 .showroom_box h4 {
