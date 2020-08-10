@@ -78,7 +78,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  
+
   /*
   body {
     font-size: 14px !important;
@@ -374,12 +374,13 @@ a.inline p {
     padding: 1%;
   }
 }
+
 @media screen and (max-width: 600px) {
 
   .coordination img,
-.inline_imgbox img {
-  height: 200px !important;
-}
+  .inline_imgbox img {
+    height: 200px !important;
+  }
 }
 
 /*ライトボックス*/
@@ -1345,7 +1346,7 @@ hr {
     padding-right: 15%;
   }
 
-  .accordion-container{
+  .accordion-container {
     padding-bottom: 10%;
   }
 }
@@ -1925,9 +1926,10 @@ section.attention_banner {
 }
 
 @media only screen and (max-width: 600px) {
-  section.attention_banner
-  {width: 98%;
-  margin: 0 auto;}
+  section.attention_banner {
+    width: 98%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -1937,11 +1939,11 @@ section.attention_banner {
 
 
 div#sysMain {
-	float: right;
-	width: 900px;
-	margin: 20px auto;
-	padding: 0 !important;
-	border: 0 !important;
+  float: right;
+  width: 900px;
+  margin: 20px auto;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 #sysWrap {
@@ -1951,12 +1953,12 @@ div#sysMain {
   overflow: hidden;
 }
 
-.side_search .sysSearchButton{
+.side_search .sysSearchButton {
   background-color: #5D5D5D !important;
   background-image: url(/img/common/ico_search.png) no-repeat center center;
 }
 
-#cartInfo{
+#cartInfo {
   float: left;
   position: relative;
   margin-top: 24px;
@@ -1974,50 +1976,63 @@ div#sysMain {
   cursor: pointer;
   padding-top: -10px;
 }
-#cartInfo p.cartTxt{
+
+#cartInfo p.cartTxt {
   margin: -2px;
   line-height: 21px;
   padding-top: 5px;
   font-size: 10px;
 }
-#cartInfo p img{
+
+#cartInfo p img {
   width: 20px;
   height: 20px;
   display: inline-block;
   margin-right: 5px;
 }
-#cartInfo i{
+
+#cartInfo i {
   margin-right: 5px;
 }
-.h_cart{
+
+.h_cart {
   display: none;
   width: 280px;
   height: 145px;
   position: absolute;
-  top: 40px; right: 5px;
+  top: 40px;
+  right: 5px;
   border: 1px solid #aaa;
   background: #fff;
   color: #333;
   z-index: 110;
   padding: 10px 20px;
 }
-.h_cart dl{
+
+.h_cart dl {
   font-size: 12px;
   margin-bottom: 0px;
 }
-.h_cart dl:after{
+
+.h_cart dl:after {
   display: block;
   content: "";
   clear: both;
 }
-.h_cart dt, .h_cart dd{float: left;}
-.h_cart dd span{
+
+.h_cart dt,
+.h_cart dd {
+  float: left;
+}
+
+.h_cart dd span {
   display: inline-block;
   color: #da4636;
   font-weight: bold;
   padding: 0 5px;
 }
-.h_cart .sysCartInfoCartIn a{
+
+.h_cart .sysCartInfoCartIn a {
   display: block;
   background: #E95383 !important;
   color: #fff;
@@ -2028,76 +2043,87 @@ div#sysMain {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  border-radius:5px;
+  border-radius: 5px;
 }
-.h_cart .sysCartInfoCartIn a:hover{
-  background:#F2A5C4 !important;
+
+.h_cart .sysCartInfoCartIn a:hover {
+  background: #F2A5C4 !important;
 }
-.h_cart .sysCartInfoCartIn a img{
+
+.h_cart .sysCartInfoCartIn a img {
   display: inline-block;
   width: 25px;
   height: 25px;
   margin-right: 5px;
 }
-.h_cart .sysCartInfoCartIn a i{margin-right: 5px;}
+
+.h_cart .sysCartInfoCartIn a i {
+  margin-right: 5px;
+}
 
 /*カートに入れる*/
 #sysItemDetail .sysCartButton {
-  padding:23px 15px !important;
+  padding: 23px 15px !important;
   text-indent: -999px;
   background: #E95383 url(/img/layout/system/btn_cart.png) center center no-repeat;
-  background-size:140px;
+  background-size: 140px;
 }
+
 #sysItemDetail .sysCartButton:hover {
-  opacity:0.8;
+  opacity: 0.8;
 }
+
 #sysItemDetail .sysGoCartButton {
   background: #E95383 url(/img/layout/system/btn_cart2.png) center center no-repeat;
   background-size: 127px;
 }
 
 /*固定のページのh1タグ英語をけす*/
-.sysHeadline b{
+.sysHeadline b {
   display: none !important;
 }
-.sysTitle b, .sysHeadline b{
+
+.sysTitle b,
+.sysHeadline b {
   display: none;
 }
 
 /*特定方テーブルレイアウト*/
-#main_tradelaw, .main_tradelaw {
-margin-top: 5% !important;
+#main_tradelaw,
+.main_tradelaw {
+  margin-top: 5% !important;
 }
 
 
 /* 新規会員登録 */
-.sysMemberAgreementFormLabel{
+.sysMemberAgreementFormLabel {
   font-size: 2rem;
   font-weight: 700;
   display: block;
 }
 
-.sysMemberAgreement{
+.sysMemberAgreement {
   padding: 1%;
 }
 
-h1.sysHeadline{
+h1.sysHeadline {
   padding-top: 5%;
 }
 
-.sysTitle span, .sysHeadline span{
-margin: 0 !important;
-padding: 0 !important;
+.sysTitle span,
+.sysHeadline span {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-#sysMain .sysFormLabel{
-  display:block;
+#sysMain .sysFormLabel {
+  display: block;
   border-left: 5px solid #40c2f0 !important;
   padding-left: 5px;
   line-height: 25px;
   font-size: 16px;
   margin-bottom: 5px;
-  margin-top:3%;
+  margin-top: 3%;
   padding-top: 5px;
   font-weight: 700;
 }
@@ -2106,12 +2132,12 @@ padding: 0 !important;
 #sysMemberRegisterIndex #sysMain input[type="text"],
 #sysFormIndex #sysMain input[type="text"],
 #sysFormIndex #sysMain textarea {
-        background: #fff;
-        border-radius: 0;
-        margin: 10px 0 10px !important;
+  background: #fff;
+  border-radius: 0;
+  margin: 10px 0 10px !important;
 }
 
-.sysButton{
+.sysButton {
   margin-bottom: 5%;
 }
 
@@ -2120,11 +2146,13 @@ padding: 0 !important;
 @media screen and (max-width: 480px) {
 
   .coordinator,
-  section.oteire ,
+  section.oteire,
   .personal_info,
-  section.catalog ,
+  section.catalog,
   .qa_list a,
   .accordion-content,
-  .showroom_box,
-  {font-size: $font-size-sp;}
+  .showroom_box
+    {
+    font-size: $font-size-sp;
+  }
 }

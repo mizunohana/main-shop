@@ -2074,7 +2074,8 @@ div#sysMain {
   clear: both;
 }
 
-.h_cart dt, .h_cart dd {
+.h_cart dt,
+.h_cart dd {
   float: left;
 }
 
@@ -2136,12 +2137,14 @@ div#sysMain {
   display: none !important;
 }
 
-.sysTitle b, .sysHeadline b {
+.sysTitle b,
+.sysHeadline b {
   display: none;
 }
 
 /*特定方テーブルレイアウト*/
-#main_tradelaw, .main_tradelaw {
+#main_tradelaw,
+.main_tradelaw {
   margin-top: 5% !important;
 }
 
@@ -2160,7 +2163,8 @@ h1.sysHeadline {
   padding-top: 5%;
 }
 
-.sysTitle span, .sysHeadline span {
+.sysTitle span,
+.sysHeadline span {
   margin: 0 !important;
   padding: 0 !important;
 }
