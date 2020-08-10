@@ -3,6 +3,7 @@
 $border-radius: 10px;
 $margintb_5:5% 0;
 $font-size-16:1.6rem;
+$font-size-sp:1.2rem;
 
 * {
   margin: 0;
@@ -78,10 +79,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
   
+  /*
   body {
     font-size: 14px !important;
   }
-
+*/
   div.container {
     width: 95%;
   }
@@ -123,6 +125,8 @@ footer {
 
 /*スマフォ対応*/
 @media screen and (max-width: 480px) {
+
+
   .top_newarrival .sysContent .sysHorizontal .sysItemImage img {
     height: 120px;
   }
@@ -2111,3 +2115,16 @@ padding: 0 !important;
   margin-bottom: 5%;
 }
 
+
+/*SPテキストサイズ*/
+@media screen and (max-width: 480px) {
+
+  .coordinator,
+  section.oteire ,
+  .personal_info,
+  section.catalog ,
+  .qa_list a,
+  .accordion-content,
+  .showroom_box,
+  {font-size: $font-size-sp;}
+}

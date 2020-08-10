@@ -69,9 +69,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  /*
   body {
     font-size: 14px !important;
   }
+*/
   div.container {
     width: 95%;
   }
@@ -2186,5 +2188,18 @@ h1.sysHeadline {
 
 .sysButton {
   margin-bottom: 5%;
+}
+
+/*SPテキストサイズ*/
+@media screen and (max-width: 480px) {
+  .coordinator,
+  section.oteire,
+  .personal_info,
+  section.catalog,
+  .qa_list a,
+  .accordion-content,
+  .showroom_box {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
