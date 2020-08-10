@@ -371,7 +371,13 @@ a.inline p {
     padding: 1%;
   }
 }
+@media screen and (max-width: 600px) {
 
+  .coordination img,
+.inline_imgbox img {
+  height: 200px !important;
+}
+}
 
 /*ライトボックス*/
 
