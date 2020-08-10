@@ -333,6 +333,7 @@ a.inline p {
 .coordination img,
 .inline_imgbox img {
   width: 100%;
+  height: 400px !important;
   min-height: 200px !important;
   border-radius: 10px;
   -o-object-fit: cover;
@@ -776,7 +777,7 @@ footer .menu-container .menu .menu-item a:hover {
 }
 
 .showrroom_list li {
-  width: 300px;
+  width: 280px;
   text-align: center;
   background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
   background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
@@ -784,7 +785,7 @@ footer .menu-container .menu .menu-item a:hover {
   line-height: 30px;
   margin-right: 2px;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 10px;
   color: #fff;
   border-radius: 10px;
@@ -1637,7 +1638,7 @@ button.readmore:hover::after {
 }
 
 .list li {
-  width: calc(92% / 4);
+  width: calc(100% / 4);
   padding: 1%;
 }
 
@@ -1655,7 +1656,7 @@ button.readmore:hover::after {
     height: 180px;
   }
   .list li {
-    width: calc(92% / 3);
+    width: calc(100% / 3);
     padding: 1%;
   }
 }

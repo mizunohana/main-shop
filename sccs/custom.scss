@@ -273,7 +273,7 @@ header {
 
 .coordinator {
   font-size: $font-size-16;
-  
+
   h3 {
     color: #40c2f0;
     position: relative;
@@ -340,6 +340,7 @@ a.inline p {
 .coordination img,
 .inline_imgbox img {
   width: 100%;
+  height: 400px !important;
   min-height: 200px !important;
   border-radius: $border-radius;
   object-fit: cover;
@@ -736,14 +737,14 @@ footer .menu-container .menu .menu-item a {
   justify-content: space-around;
 
   li {
-    width: 300px;
+    width: 280px;
     text-align: center;
     background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
     height: 45px;
     line-height: 30px;
     margin-right: 2px;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     padding: 10px;
     color: #fff;
     border-radius: $border-radius;
@@ -1569,7 +1570,7 @@ button.readmore:hover::after {
 
 
   li {
-    width: calc(92% / 4);
+    width: calc(100% / 4);
     padding: 1%;
   }
 
@@ -1587,7 +1588,7 @@ button.readmore:hover::after {
     }
 
     li {
-      width: calc(92% / 3);
+      width: calc(100% / 3);
       padding: 1%;
     }
 
