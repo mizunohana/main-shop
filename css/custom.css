@@ -2206,7 +2206,8 @@ h1.sysHeadline {
   .fatfooterWrap div li a {
     font-size: 1.4rem;
   }
-  .fatfooterWrap div h5 {
+  .fatfooterWrap div h5,
+  .btn-cross {
     font-size: 1,6rem;
   }
 }
