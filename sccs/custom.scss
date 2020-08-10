@@ -3,7 +3,7 @@
 $border-radius: 10px;
 $margintb_5:5% 0;
 $font-size-16:1.6rem;
-$font-size-sp:1.2rem;
+$font-size-sp:1.4rem;
 
 * {
   margin: 0;
@@ -2151,8 +2151,13 @@ h1.sysHeadline {
   section.catalog,
   .qa_list a,
   .accordion-content,
-  .showroom_box
+  .showroom_box,
+  .fatfooterWrap div li a
     {
     font-size: $font-size-sp;
   }
+
+  .fatfooterWrap div h5
+  {font-size: 1,6rem;}
+
 }
