@@ -260,6 +260,10 @@ header img {
 }
 
 /*コーディネート*/
+.coordinator {
+  font-size: 1.6rem;
+}
+
 .coordinator h3 {
   color: #40c2f0;
   position: relative;
