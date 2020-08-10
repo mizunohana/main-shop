@@ -1405,6 +1405,7 @@ hr {
   text-decoration: none;
   color: #31aae2;
   line-height: 2;
+  font-size: 1.6rem;
 }
 
 .qa_list a:hover {
