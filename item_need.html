@@ -1,0 +1,129 @@
+<section class="item_attention">
+<ul class="item_attention_list">
+  <a href="<#SSLルートURL>form/inquiry/"> <li>お問い合わせ</li></a>
+  <a href="<#SSLルートURL>form/mitsumori/"><li>見積もり依頼</li></a>
+  <!--<li>東京サテライトショールーム</li>-->
+</ul>
+
+</section>
+
+<section class="item_attention">
+  <h3>洗面空間を作る為には以下の商品が必要となります。</h3>
+  <ul class="item_list">
+    <li> <a href="#">▶洗面ボウル本体</a></li>
+    <li> <a href="#">▶水栓金具(湯水混合栓/単水栓)</a></li>
+    <li> <a href="#">▶給水用フレキシブルホース(単水栓の場合)</a></li>
+    <li> <a href="#">▶排水金具</a></li>
+    <li> <a href="#">▶排水トラップ</a></li>
+    <li><a href="#">▶止水栓</a></li>
+    <li> <a href="#">▶取付カウンター(天板)</a></li>
+  </ul>
+</section>
+
+
+
+
+
+<style type="text/css">
+/*アイテムアテンション*/
+section.item_attention{
+font-size: 1.6rem;
+margin: 5% 0;
+}
+.item_list a {
+  margin: 2% 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+  text-decoration: none;
+  color: rgb(49, 170, 226);
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.item_list a:hover {
+    padding: 0 10px;
+    background-position: -100% 0;
+    color: #fff;
+  }
+
+
+  section.item_attention h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2% 0;
+}
+
+section.item_attention ul.attention{
+padding-left: 20px;
+}
+
+ul.attention li {
+  line-height: 2;
+  list-style-image: url(<#サイトURL>img/common/li_flower.png);
+  /*text-indent: -1.6rem;*/
+}
+
+
+.item_attention_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.item_attention_list li {
+  width: 280px;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  height: 45px;
+  line-height: 30px;
+  margin-right: 2px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.item_attention_list li:hover {
+  background: -webkit-linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
+  background: linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item_attention_list a {
+  text-decoration: none !important;
+}
+
+.item_attention_list a:active {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .item_attention_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15%;
+  }
+  .item_attention_list li {
+    width: 80%;
+    margin: 5% auto;
+  }
+}
+
+ </style>

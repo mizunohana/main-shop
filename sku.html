@@ -1,56 +1,62 @@
-<section>
-    <h4>商品情報</h4>
-    <ul>
-        <li>商品コード:00000000</li>
-        <li>型式:D000</li>
-    </ul>
-</section>
 
-<section>
-    <h4>梱包物</h4>
-    <ul>
-        <li>本体…1個</li>
-        <li>ねじ…4本</li>
-        <li>取り扱い説明書…1冊</li>
-    </ul>
-
-</section>
-
-<section>
-    <h4>図面ダウンロード</h4>
+<div class="itempage_detail">
+    <h3>商品情報</h3>
+    ■商品コード：00743971<br>
+    ■型式：R001<br>
+    ■サイズ(mm):幅300×高さ700×奥行160<br>
+    ■主材料:ステンレス
+</div>
+<div class="itempage_detail">
+    <h3>梱包物</h3>
+    ■本体…1個<br>
+    ■ねじ…4本<br>
+    ■取り扱い説明書…1冊<br>
+</div>
+<div class="itempage_detail">
+    <h3>図面ダウンロード</h3>
     <ul>
         <li>PDF</li>
         <li>DWG</li>
         <li>DXF</li>
     </ul>
+</div>
 
-</section>
+<div class="itempage_detail">
+    <h3>ご購入前にご確認ください。</h3>
+    ●キャビネットは製造工程において若干の収縮や反りが生じます。
+    <br>●洗面ボウルは製造工程で寸法誤差が生じるため、天板の穴あけ作業の際は、現物にて取合いの詳細をご確認ください。
+    <br>●設置のご依頼につきましては、お近くの工務店様等にご相談ください。
+</div>
 
-<section>
-    <h4>資料ダウンロード</h4>
-    <ul>
-        <li>取り扱い説明書</li>
-        <li>保証書</li>
-    </ul>
 
-</section>
-
-<section>
-    <h4>ご購入前にご確認ください</h4>
-
-    <ul>
-        <li>●mizunohanaの洗面ボウルはの排水穴は海外規格のΦ45mmとなっております。</li>
-        <li>●mizunohanaの排水金具・排水トラップをご利用を推奨しております。</li>
-        <li>●排水穴に合わない排水金具を使用すると、漏水などが起こる恐れがあります。</li>
-    </ul>
-    <a href="#">詳しくはこちらをご覧ください</a>
-    <!--もっとみるで表示させる-->
-    <div>
-        <h4>注意事項</h4>
-        <p>設置施工は住設業者や工務店等の専門業者にご依頼ください。</p>
-        <p>取付けカウンター（天板）や水栓金具、その他部材は含まれておりません。</p>
-        <p>当商品は屋内専用品です。屋外でのご使用はお控え下さい。</p>
-        <!-- ここからもっとみる-->
-        <p>タオルや化粧品などの装飾品はイメージに為、商品ではございません。</p>
-    </div>
-</section>
+=ARRAYFORMULA(
+    if(S2:S="","","■"&VLOOKUP(A2:A,A:AR,COLUMN($S1),0))&
+    if(T2:T="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($T1),0))&
+    CHAR(10)&
+    if(U2:U="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($U1),0))&
+    if(V2:V="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($V1),0))&
+    CHAR(10)&
+    if(W2:W="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($W1),0))&
+    if(X2:X="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($X1),0))&
+    CHAR(10)&
+    if(Y2:Y="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($Y1),0))&
+    if(Z2:Z="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($Z1),0))&
+    CHAR(10)&
+    if(AA2:AA="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AA1),0))&
+    if(AB2:AB="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AB1),0))&
+    CHAR(10)&
+    if(AC2:AC="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AC1),0))&
+    if(AD2:AD="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AD1),0))&
+    CHAR(10)&
+    if(AE2:AE="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AE1),0))&
+    if(AF2:AF="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AF1),0))&
+    CHAR(10)&
+    if(AG2:AG="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AG1),0))&
+    if(AH2:AH="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AH1),0))&
+    CHAR(10)&
+    if(AI2:AI="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AI1),0))&
+    if(AJ2:AJ="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AJ1),0))&
+    CHAR(10)&
+    if(AK2:AK="","","<br>■"&VLOOKUP(A2:A,A:AR,COLUMN($AK1),0))&
+    if(AL2:AL="","",":"&VLOOKUP(A2:A,A:AR,COLUMN($AL1),0))
+    )
