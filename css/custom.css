@@ -2276,4 +2276,15 @@ section.rule ol {
 section.rule ol li {
   list-style: decimal;
 }
+
+section.rule h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 5% 0;
+}
+
+section.rule h5 {
+  font-weight: bold;
+  margin: 5% 0;
+}
 /*# sourceMappingURL=custom.css.map */
