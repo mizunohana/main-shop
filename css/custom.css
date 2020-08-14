@@ -2298,7 +2298,7 @@ section.rule h5 {
   margin: 2% 0;
 }
 
-section.rule a {
+a {
   margin: 2% 0;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
@@ -2311,32 +2311,9 @@ section.rule a {
   color: #31aae2;
   line-height: 2;
   font-size: 1.6rem;
-  padding-left: 3.2rem;
 }
 
-section.rule a:hover {
-  padding: 0 10px;
-  background-position: -100% 0;
-  color: #fff;
-}
-
-.qa_list_2d a {
-  margin: 2% 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
-  background-position: 0 0;
-  background-size: 200% auto;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-decoration: none;
-  color: #31aae2;
-  line-height: 2;
-  font-size: 1.6rem;
-  padding-left: 3.2rem;
-}
-
-.qa_list_2d a:hover {
+a:hover {
   padding: 0 10px;
   background-position: -100% 0;
   color: #fff;

@@ -2251,27 +2251,10 @@ margin: 2% 0}
 h5{font-weight: bold;
   margin: 2% 0 }
 
-  a {
-    margin: 2% 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
-    background-position: 0 0;
-    background-size: 200% auto;
-    transition: .3s;
-    text-decoration: none;
-    color: rgb(49, 170, 226);
-    line-height: 2;
-    font-size: $font-size-16;
-    padding-left: 3.2rem;
-  
-    &:hover {
-      padding: 0 10px;
-      background-position: -100% 0;
-      color: #fff;
-    }
-  }
+ 
 }
 
-.qa_list_2d a {
+a {
   margin: 2% 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
   background-position: 0 0;
@@ -2281,7 +2264,6 @@ h5{font-weight: bold;
   color: rgb(49, 170, 226);
   line-height: 2;
   font-size: $font-size-16;
-  padding-left: 3.2rem;
 
   &:hover {
     padding: 0 10px;
