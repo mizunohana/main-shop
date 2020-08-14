@@ -2258,18 +2258,14 @@ section.rule h3 {
   background: #ccc;
 }
 
-section.rule p {
-  margin: 5% 0;
-}
-
 section.rule hr {
   border-bottom: dotted #aaa;
   height: 1px;
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 section.rule ol {
-  margin: 5% 0;
+  margin: 2% 0;
   padding-left: 3.2rem;
 }
 
@@ -2280,11 +2276,11 @@ section.rule ol li {
 section.rule h4 {
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 
 section.rule h5 {
   font-weight: bold;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 /*# sourceMappingURL=custom.css.map */

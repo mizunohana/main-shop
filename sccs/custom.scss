@@ -2212,17 +2212,14 @@ h3{
   background: #ccc;
 }
 
-p{
-  margin: $margintb_5;
-}
 hr{
   border-bottom: dotted #aaa;
   height: 1px;
-  margin: $margintb_5;
+  margin: 3% 0;
 }
 
 ol{
-  margin: $margintb_5;
+  margin: 2% 0;
   padding-left: 3.2rem;
 
   li{
@@ -2233,8 +2230,8 @@ ol{
 
 h4{font-size: 1.8rem;
 font-weight: bold;
-margin: $margintb_5;}
+margin: 2% 0}
 
 h5{font-weight: bold;
-  margin: $margintb_5;}
+  margin: 2% 0 }
 }
