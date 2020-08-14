@@ -2298,7 +2298,7 @@ section.rule h5 {
   margin: 2% 0;
 }
 
-a {
+section.rule a {
   margin: 2% 0;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
@@ -2313,7 +2313,7 @@ a {
   font-size: 1.6rem;
 }
 
-a:hover {
+section.rule a:hover {
   padding: 0 10px;
   background-position: -100% 0;
   color: #fff;
