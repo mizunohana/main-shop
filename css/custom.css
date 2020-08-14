@@ -2256,6 +2256,7 @@ section.rule h3 {
   font-size: 2.0rem;
   padding: 3%;
   background: #ccc;
+  margin: 5% 0;
 }
 
 section.rule hr {
@@ -2270,7 +2271,18 @@ section.rule ol {
 }
 
 section.rule ol li {
+  line-height: 2;
   list-style: decimal;
+}
+
+section.rule ul {
+  margin: 2% 0;
+  padding-left: 3.2rem;
+}
+
+section.rule ul li {
+  line-height: 2;
+  list-style-image: url(/img/common/li_flower.png);
 }
 
 section.rule h4 {
