@@ -1,0 +1,68 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.3%;
+}
+
+body {
+  color: #333;
+  font-size: 1.6rem;
+  font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main h2 {
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  font-size: 4.0rem;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+main h2 {
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+main h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  border-radius: 2px;
+}
+
+main p {
+  max-width: 1280px;
+  min-width: 480px;
+  margin: 2% auto;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+footer small {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=feature.css.map */
