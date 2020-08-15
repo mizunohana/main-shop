@@ -285,17 +285,19 @@ section.feature {
         }
     }
 
-    a{text-decoration: none;
-    color: #333;
-&:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    -moz-filter: "alpha( opacity=50 )";
-    -webkit-filter: "alpha( opacity=50 )";
-    -o-filter: "alpha( opacity=50 )";
-    -ms-filter: "alpha( opacity=50 )";
-}
-}
+    a {
+        text-decoration: none;
+        color: #333;
+
+        &:hover {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            -moz-filter: "alpha( opacity=50 )";
+            -webkit-filter: "alpha( opacity=50 )";
+            -o-filter: "alpha( opacity=50 )";
+            -ms-filter: "alpha( opacity=50 )";
+        }
+    }
 
 }
 
