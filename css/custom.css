@@ -1672,6 +1672,8 @@ button.readmore:hover::after {
 /*個人情報の取り扱い*/
 .personal_info {
   font-size: 1.6rem;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .personal_info h3 {
