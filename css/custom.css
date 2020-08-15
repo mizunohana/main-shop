@@ -2219,6 +2219,9 @@ h1.sysHeadline {
   .btn-cross {
     font-size: 1, 6rem;
   }
+  .personal_info {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
