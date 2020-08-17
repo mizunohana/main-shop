@@ -396,6 +396,7 @@ section.feature_led {
             height: 800px;
             object-fit: cover;
             font-family: 'object-fit: cover';
+          //  object-position: 0% 0%;
 
             @include sp {
                 height: 30vh;
@@ -414,6 +415,8 @@ section.feature_led {
         border-radius: $border-radius;
         padding: 0.5%;
         margin-bottom: 5%;
+        -webkit-transition: all .3s;
+            transition: all .3s;
 
        
         @include pc {
@@ -432,6 +435,8 @@ section.feature_led {
                 0 0 50px #fff,
                 -10px 0 20px #0ff,
                 10px 0 20px #0ff;
+                -webkit-transition: all .7s;
+            transition: all .7s;
 
         }
 
@@ -459,6 +464,7 @@ section.feature_led {
             object-fit: cover;
             font-family: 'object-fit: cover';
             border-radius: $border-radius;
+           
 
         }
 

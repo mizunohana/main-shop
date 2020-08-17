@@ -514,6 +514,8 @@ section.feature_led .flex_box_item {
   border-radius: 10px;
   padding: 0.5%;
   margin-bottom: 5%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 @media (max-width: 1024px) {
@@ -537,6 +539,8 @@ section.feature_led .flex_box_item {
 section.feature_led .flex_box_item:hover {
   -webkit-box-shadow: 0 0 50px #fff, -10px 0 20px #0ff, 10px 0 20px #0ff;
           box-shadow: 0 0 50px #fff, -10px 0 20px #0ff, 10px 0 20px #0ff;
+  -webkit-transition: all .7s;
+  transition: all .7s;
 }
 
 section.feature_led .flex_box_item p {
