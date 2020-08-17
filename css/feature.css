@@ -376,7 +376,6 @@ section.feature_led a {
 }
 
 section.feature_led header {
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-image: url(./../img/feature/led_top.jpg);
