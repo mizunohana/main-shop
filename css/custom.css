@@ -2323,4 +2323,10 @@ section.rule a:hover {
   background-position: -100% 0;
   color: #fff;
 }
+
+.hashtag li {
+  list-style: none;
+  content: "#";
+  color: #999;
+}
 /*# sourceMappingURL=custom.css.map */
