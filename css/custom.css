@@ -2329,4 +2329,47 @@ section.rule a:hover {
   content: "#";
   color: #999;
 }
+
+.Maintenance {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Maintenance img {
+  width: 100%;
+}
+
+.Maintenance h1, .Maintenance h2 {
+  text-align: center;
+}
+
+.Maintenance h1 {
+  font-size: 5vw;
+}
+
+.Maintenance h2 {
+  font-size: 20px;
+}
+
+.Maintenance h1 {
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
 /*# sourceMappingURL=custom.css.map */
