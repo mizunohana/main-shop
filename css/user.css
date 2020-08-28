@@ -1,6 +1,6 @@
 /* 基本設定
  *----------------------------------------------------------------------*/
-html {
+ html {
   font-size: 62.3%;
 }
 
@@ -4667,6 +4667,7 @@ img.pc {
   content: " #";
 }
 
+/******* カテゴリーPR設定 *******/
 
 .sysItemPrArea span {
   /* width: 24%; */
@@ -4683,4 +4684,16 @@ img.pc {
   border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
   border-image-slice: 1;
   border-image-width: 2;
+}
+
+/******* カテゴリーimg 角丸 *******/
+
+.sysThumbnailImage img{
+border-radius:10px;
+}
+
+/******* カテゴリーページャ調整 *******/
+
+.sysPagination ul{
+  margin-bottom: 10%;
 }
