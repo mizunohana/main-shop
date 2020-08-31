@@ -2309,3 +2309,19 @@ h5{font-weight: bold;
     font-weight: 900;
   }
 }
+
+/******* お知らせ*******/
+article h1 {
+  font-size: 2.3rem !important;
+  width: 100%;
+  position: relative;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
+  border-image-slice: 0 0 1;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+section.nwes{
+font-size: 1.6rem;
+}
