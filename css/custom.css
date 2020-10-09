@@ -2351,7 +2351,8 @@ section.rule a:hover {
   width: 100%;
 }
 
-.Maintenance h1, .Maintenance h2 {
+.Maintenance h1,
+.Maintenance h2 {
   text-align: center;
 }
 
@@ -2391,5 +2392,61 @@ article h1 {
 
 section.nwes {
   font-size: 1.6rem;
+}
+
+/******* 送料テーブル*******/
+section.rule table {
+  width: 100%;
+  text-align: center;
+}
+
+section.rule th {
+  background: #e9727e;
+  border: solid 1px #ccc;
+  color: #fff;
+  padding: 10px;
+}
+
+section.rule td {
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  section.rule .tbl-r03 {
+    width: 90%;
+  }
+  section.rule .tbl-r03 tr {
+    display: block;
+    float: left;
+  }
+  section.rule .tbl-r03 tr td,
+  section.rule .tbl-r03 tr th {
+    border-left: none;
+    display: block;
+    height: 50px;
+  }
+  section.rule .tbl-r03 thead {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  section.rule .tbl-r03 thead tr {
+    width: 100%;
+  }
+  section.rule .tbl-r03 tbody {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  section.rule .tbl-r03 tbody tr {
+    width: 50%;
+  }
+  section.rule .tbl-r03 tr td + td {
+    border-left: none;
+  }
+  section.rule .tbl-r03 tbody td:last-child {
+    border-bottom: solid 1px #ccc;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

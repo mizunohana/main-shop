@@ -2127,7 +2127,7 @@ h1.sysHeadline {
 }
 
 #sysMain .sysFormLabel,
-.SysMypageMinorHeadLine  {
+.SysMypageMinorHeadLine {
   display: block;
   border-left: 5px solid #40c2f0 !important;
   padding-left: 5px;
@@ -2171,21 +2171,23 @@ h1.sysHeadline {
   .btn-cross {
     font-size: 1, 6rem;
   }
-  .personal_info{
+
+  .personal_info {
     width: 100%;
   }
 
 }
 
 @media screen and (max-width: 1280px) {
-.sysCart #sysMain,
-.sysMypage div#sysMain,
-.sysMemberRegister #sysMain,
-#sysItemSearch div#sysMain{
+
+  .sysCart #sysMain,
+  .sysMypage div#sysMain,
+  .sysMemberRegister #sysMain,
+  #sysItemSearch div#sysMain {
     width: 98% !important;
     padding: 70px 10px 30px !important;
-    margin:0 auto;
-}
+    margin: 0 auto;
+  }
 
 }
 
@@ -2199,62 +2201,65 @@ h1.sysHeadline {
 #sysFormConfirm #sysMain,
 #sysFormThanks #sysMain,
 .sysMemberRegister #sysMain,
-.sysMypage #sysMain{
-            width: 1100px;
-            border: 0px solid #eee;
-            padding: 20px 150px !important;
-            margin: 0 !important;
+.sysMypage #sysMain {
+  width: 1100px;
+  border: 0px solid #eee;
+  padding: 20px 150px !important;
+  margin: 0 !important;
 }
 
 /*ご利用規約*/
-section.rule{
-font-size: $font-size-16;
-margin: $margintb_5;
-
-h3{
-  font-size: 2.0rem;
-  padding: 3%;
-  background: #ccc;
+section.rule {
+  font-size: $font-size-16;
   margin: $margintb_5;
-}
 
-hr{
-  border-bottom: dotted #aaa;
-  height: 1px;
-  margin: 3% 0;
-}
-
-ol{
-  margin: 2% 0;
-  padding-left: 3.2rem;
-
-  li{
-    line-height: 2;
-    list-style: decimal;
+  h3 {
+    font-size: 2.0rem;
+    padding: 3%;
+    background: #ccc;
+    margin: $margintb_5;
   }
 
-}
-
-ul{
-  margin: 2% 0;
-  padding-left: 3.2rem;
-
-  li{
-    line-height: 2;
-    list-style-image: url(/img/common/li_flower.png);
+  hr {
+    border-bottom: dotted #aaa;
+    height: 1px;
+    margin: 3% 0;
   }
 
-}
+  ol {
+    margin: 2% 0;
+    padding-left: 3.2rem;
 
-h4{
-  border-left: 10px solid #333;
-  padding: 0 0 0 6px;
-  font-size: 1.8rem;
-font-weight: bold;
-margin: 2% 0}
+    li {
+      line-height: 2;
+      list-style: decimal;
+    }
 
-h5{font-weight: bold;
-  margin: 2% 0 }
+  }
+
+  ul {
+    margin: 2% 0;
+    padding-left: 3.2rem;
+
+    li {
+      line-height: 2;
+      list-style-image: url(/img/common/li_flower.png);
+    }
+
+  }
+
+  h4 {
+    border-left: 10px solid #333;
+    padding: 0 0 0 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2% 0
+  }
+
+  h5 {
+    font-weight: bold;
+    margin: 2% 0
+  }
 
   a {
     margin: 2% 0;
@@ -2266,40 +2271,48 @@ h5{font-weight: bold;
     color: rgb(49, 170, 226);
     line-height: 2;
     font-size: $font-size-16;
-  
+
     &:hover {
       padding: 0 10px;
       background-position: -100% 0;
       color: #fff;
     }
   }
- 
+
 }
 
 
-.hashtag li{
+.hashtag li {
   list-style: none;
   content: "#";
   color: #999;
 }
 
-.Maintenance{
+.Maintenance {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  img{width: 100%;}
-  h1,h2{text-align: center;}
+  img {
+    width: 100%;
+  }
 
-  h1{
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
     font-size: 5vw;
   }
 
-  h2{font-size: 20px;}
+  h2 {
+    font-size: 20px;
+  }
 
-  h1{
+  h1 {
     color: #40c2f0;
     position: relative;
     text-align: center;
@@ -2322,6 +2335,72 @@ article h1 {
   margin-bottom: 2%;
 }
 
-section.nwes{
-font-size: 1.6rem;
+section.nwes {
+  font-size: 1.6rem;
+}
+
+/******* 送料テーブル*******/
+section.rule {
+  table {
+    width: 100%;
+    text-align: center;
+  }
+
+  th {
+    background: #e9727e;
+    border: solid 1px #ccc;
+    color: #fff;
+    padding: 10px;
+  }
+
+  td {
+    border: solid 1px #ccc;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .tbl-r03 {
+      width: 90%;
+    }
+
+    .tbl-r03 tr {
+      display: block;
+      float: left;
+    }
+
+    .tbl-r03 tr td,
+    .tbl-r03 tr th {
+      border-left: none;
+      display: block;
+      height: 50px;
+    }
+
+    .tbl-r03 thead {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
+    .tbl-r03 thead tr {
+      width: 100%;
+    }
+
+    .tbl-r03 tbody {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
+    .tbl-r03 tbody tr {
+      width: 50%;
+    }
+
+    .tbl-r03 tr td+td {
+      border-left: none;
+    }
+
+    .tbl-r03 tbody td:last-child {
+      border-bottom: solid 1px #ccc;
+    }
+  }
 }
