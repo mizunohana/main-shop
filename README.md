@@ -98,3 +98,10 @@ http://mizunohana.aispr.jp/personal_information
 カートに追加したときの動きを変更  
 →  
 楽天方式に変更
+
+## 2020/10/14
+送料無料キャンペーンページ作成
+
+---
+## コンテンツ例  
+https://cojicaji.jp/cleaning/washroom/757
