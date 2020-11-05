@@ -595,6 +595,23 @@ section.feature_led {
 
 /***特集鬼滅の刃****/
 section.glas_bass {
+    .leed {
+        text-align: center;
+        font-size: 110%;
+        margin-bottom: 5%;
+    }
+
+    h3{
+        display: block;
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+
+        img{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 
     div.flex_box_item {
         display: flex;
@@ -610,10 +627,11 @@ section.glas_bass {
                 font-size: 80%;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 color: black;
             }
+
         }
 
         img {
@@ -622,6 +640,10 @@ section.glas_bass {
             object-fit: cover;
             font-family: 'object-fit: cover';
             border-radius: $border-radius;
+
+            :hover {
+                box-shadow: 0px 0px 10px gray;
+            }
         }
 
         .tag {
