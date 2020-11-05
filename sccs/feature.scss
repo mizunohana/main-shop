@@ -396,7 +396,7 @@ section.feature_led {
             height: 800px;
             object-fit: cover;
             font-family: 'object-fit: cover';
-          //  object-position: 0% 0%;
+            //  object-position: 0% 0%;
 
             @include sp {
                 height: 50vh;
@@ -416,9 +416,9 @@ section.feature_led {
         padding: 0.5%;
         margin-bottom: 5%;
         -webkit-transition: all .3s;
-            transition: all .3s;
+        transition: all .3s;
 
-       
+
         @include pc {
             width: 100%;
         }
@@ -430,22 +430,23 @@ section.feature_led {
         @include sp {
             width: 90%;
         }
+
         &:hover {
             box-shadow:
                 0 0 50px #fff,
                 -10px 0 20px #0ff,
                 10px 0 20px #0ff;
-                -webkit-transition: all .7s;
+            -webkit-transition: all .7s;
             transition: all .7s;
 
         }
 
-        p{
-            text-align:left;
+        p {
+            text-align: left;
             padding-left: 3.2rem;
         }
 
-        h3{
+        h3 {
             font-size: 2.5rem;
             margin-bottom: 5%;
         }
@@ -464,7 +465,7 @@ section.feature_led {
             object-fit: cover;
             font-family: 'object-fit: cover';
             border-radius: $border-radius;
-           
+
 
         }
 
@@ -490,6 +491,7 @@ section.feature_led {
             outline: none;
             margin-top: 5%;
             font-weight: 700;
+
             &::before,
             &::after {
                 position: absolute;
@@ -511,7 +513,7 @@ section.feature_led {
                 box-sizing: border-box;
                 -webkit-transition: all .3s;
                 transition: all .3s;
-                
+
             }
         }
 
@@ -526,7 +528,7 @@ section.feature_led {
                 border-color: #0ff;
                 color: #59b1eb;
                 box-shadow:
-                0 0 30px#0ff,
+                    0 0 30px#0ff,
 
             }
         }
@@ -534,100 +536,110 @@ section.feature_led {
 
 
 
-        @keyframes led_animation1 {
-            0% {
-                opacity: 0;
+    @keyframes led_animation1 {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0.5;
+        }
+
+        40% {
+            opacity: 0.2;
+        }
+
+        60% {
+            opacity: 0, 8;
+        }
+
+        80% {
+            opacity: 0.4;
+        }
+
+        90% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes led_animation2 {
+        0% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    header {
+        animation: led_animation1 2S;
+    }
+
+    header h1,
+    header h2,
+    header p {
+        animation: led_animation2 4S
+    }
+
+}
+
+/***特集鬼滅の刃****/
+section.glas_bass {
+
+    div.flex_box_item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        div {
+            width: calc(100% / 2 - 5%);
+            text-align: center;
+            margin-bottom: 5%;
+
+            span {
+                font-size: 80%;
             }
 
-            20% {
-                opacity: 0.5;
-            }
-
-            40% {
-                opacity: 0.2;
-            }
-
-            60% {
-                opacity: 0, 8;
-            }
-
-            80% {
-                opacity: 0.4;
-            }
-
-            90% {
-                opacity: 0.2;
-            }
-
-            100% {
-                opacity: 1;
+            a{
+                text-decoration: none;
+                color: black;
             }
         }
 
-        @keyframes led_animation2 {
-            0% {
-                opacity: 0;
-            }
-
-            60% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
+        img {
+            width: 100%;
+            margin-bottom: 3%;
+            object-fit: cover;
+            font-family: 'object-fit: cover';
+            border-radius: $border-radius;
         }
 
-
-        header {
-            animation: led_animation1 2S;
+        .tag {
+            display: inline-block;
+            margin: 0 .1em .6em 0;
+            padding: .6em;
+            line-height: 1;
+            text-decoration: none;
+            color: #0000ee;
+            background-color: #fff;
+            border: 1px solid #0000ee;
+            border-radius: 2em;
+            font-size: 12px;
         }
 
-        header h1,
-        header h2,
-        header p {
-            animation: led_animation2 4S
+        .tag:before {
+            content: "#";
         }
-
-    }
-
-    /***特集鬼滅の刃****/
-    section.glas_bass{
-
-div.flex_box_item{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    div{
-        width: calc(100% / 2 - 5%);
-        text-align: center;
-        margin-bottom: 5%;
-    }
-
-    img {
-        width: 100%;
-        margin-bottom: 3%;
-        object-fit: cover;
-        font-family: 'object-fit: cover';
-        border-radius: $border-radius;
-    }
-
-    .tag {
-        display: inline-block;
-        margin: 0 .1em .6em 0;
-        padding: .6em;
-        line-height: 1;
-        text-decoration: none;
-        color: #0000ee;
-        background-color: #fff;
-        border: 1px solid #0000ee;
-        border-radius: 2em;
-        font-size: 12px;
-    }
-    .tag:before {
-        content: "#";	
-    }
 
     }
 }

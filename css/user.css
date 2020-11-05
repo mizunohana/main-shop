@@ -4697,3 +4697,95 @@ border-radius:10px;
 .sysPagination ul{
   margin-bottom: 10%;
 }
+
+
+/***********************************
+  クーポン関係
+***********************************/
+
+/*吹き出し*/
+.coupon_common{
+  width: 70%;
+  margin: 0 auto;
+}
+.balloon {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 1.6rem;
+  text-align: center;
+  background: #EEEEEE;
+  width: 100%;
+  border-radius:10px
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #EEEEEE;
+}
+
+.balloon:last-child:before{
+  display: none;
+}
+
+.balloon h4{
+  font-size: 2.0rem;
+  font-weight: 750;
+}
+
+.coupon_reed{
+  text-align: center;
+  line-height: 2;
+  font-size: 1.6rem;
+  margin: 5% 0;
+}
+
+.coupon_reed h5{
+font-size: 1.8rem;
+font-weight: 750;
+margin-top: 3%;
+}
+
+@media screen and (max-width:480px) {
+  .coupon_common{
+    width: 90%;
+  }
+}
+
+
+/*送料無料　20201023*/
+
+.free_shipping h2 {
+  margin: 0 auto;
+  padding-top: 25px;
+  font-size: 2.0rem;
+  width: 250px;
+  text-align: center;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
+  border-image-slice: 0 0 1;
+}
+
+.free_shipping h3 {
+  font-size: 4.0rem;
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+}
