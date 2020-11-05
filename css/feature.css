@@ -712,4 +712,51 @@ section.feature_led header p {
   -webkit-animation: led_animation2 4S;
           animation: led_animation2 4S;
 }
+
+/***特集鬼滅の刃****/
+section.glas_bass div.flex_box_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+section.glas_bass div.flex_box_item div {
+  width: calc(100% / 2 - 5%);
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+section.glas_bass div.flex_box_item img {
+  width: 100%;
+  margin-bottom: 3%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: 'object-fit: cover';
+  border-radius: 10px;
+}
+
+section.glas_bass div.flex_box_item .tag {
+  display: inline-block;
+  margin: 0 .1em .6em 0;
+  padding: .6em;
+  line-height: 1;
+  text-decoration: none;
+  color: #0000ee;
+  background-color: #fff;
+  border: 1px solid #0000ee;
+  border-radius: 2em;
+  font-size: 12px;
+}
+
+section.glas_bass div.flex_box_item .tag:before {
+  content: "#";
+}
 /*# sourceMappingURL=feature.css.map */
