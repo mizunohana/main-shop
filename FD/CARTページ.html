@@ -1,0 +1,347 @@
+<style>
+    #flipdesk-html-button-content div.fd-wrapper {
+        box-sizing: border-box;
+        text-align: left;
+        /*余白はここで変更できます*/
+        padding: 10px;
+        /*背景はここで変更できます*/
+        background-color: #fff;
+        /*フォントカラーはここで変更できます*/
+        color: #000;
+        /*フォントサイズはここで変更できます*/
+        font-size: 0.8rem;
+        /*枠線はここで変更できます*/
+        border: 1px #eee solid;
+
+    }
+
+    #flipdesk-html-button-content h3 {
+        margin: 10px auto;
+    }
+
+
+    #flipdesk-html-button-content a[class^="flipdesk-r-button-"] {
+        border-radius: 15px;
+        height: auto;
+        margin: 5px auto;
+        padding: 10px 5px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        text-decoration: none;
+    }
+
+    #flipdesk-html-button-content a[class^="flipdesk-button-"]:hover,
+    #flipdesk-html-button-content a[class^="flipdesk-r-button-"]:hover {
+        opacity: 0.7;
+    }
+
+    #flipdesk-html-button-content a[class^="flipdesk-button-"] {
+        border-radious: 0;
+        height: auto;
+        padding: 10px 5px;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        text-decoration: none;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list {
+        display: table;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0;
+        min-height: 90px;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list>li {
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list>li:first-child {
+        width: 100px;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list>li.top {
+        vertical-align: top;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list>li.middle {
+        vertical-align: middle;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list>li.bottom {
+        vertical-align: bottom;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list-half {
+        display: table;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list-half>li {
+        display: table-cell;
+        text-align: center;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list-half>li:first-child {
+        padding-right: 5px;
+    }
+
+    #flipdesk-html-button-content ul.flipdesk-layout-list-half>li:last-child {
+        padding-left: 5px;
+    }
+
+    #flipdesk-html-button-content img.flipdesk-img-circle {
+        border-radius: 50%;
+    }
+
+    #flipdesk-html-button-content img.flipdesk-img-radious {
+        border-radius: 10px;
+    }
+
+    #flipdesk-html-button-content .border--navy {
+        border-color: #001F3F;
+    }
+
+    #flipdesk-html-button-content .border--blue {
+        border-color: #0074D9;
+    }
+
+    #flipdesk-html-button-content .border--aqua {
+        border-color: #7FDBFF;
+    }
+
+    #flipdesk-html-button-content .border--teal {
+        border-color: #39CCCC;
+    }
+
+    #flipdesk-html-button-content .border--olive {
+        border-color: #3D9970;
+    }
+
+    #flipdesk-html-button-content .border--green {
+        border-color: #2ECC40;
+    }
+
+    #flipdesk-html-button-content .border--lime {
+        border-color: #01FF70;
+    }
+
+    #flipdesk-html-button-content .border--yellow {
+        border-color: #FFDC00;
+    }
+
+    #flipdesk-html-button-content .border--orange {
+        border-color: #FF851B;
+    }
+
+    #flipdesk-html-button-content .border--red {
+        border-color: #FF4136;
+    }
+
+    #flipdesk-html-button-content .border--fuchsia {
+        border-color: #F012BE;
+    }
+
+    #flipdesk-html-button-content .border--purple {
+        border-color: #B10DC9;
+    }
+
+    #flipdesk-html-button-content .border--maroon {
+        border-color: #85144B;
+    }
+
+    #flipdesk-html-button-content .border--white {
+        border-color: #FFFFFF;
+    }
+
+    #flipdesk-html-button-content .border--gray {
+        border-color: #AAAAAA;
+    }
+
+    #flipdesk-html-button-content .border--silver {
+        border-color: #DDDDDD;
+    }
+
+    #flipdesk-html-button-content .border--black {
+        border-color: #111111;
+    }
+
+    #flipdesk-html-button-content .bg-navy {
+        background-color: #001F3F;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-blue {
+        background-color: #0074D9;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-aqua {
+        background-color: #7FDBFF;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-teal {
+        background-color: #39CCCC;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-olive {
+        background-color: #3D9970;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-green {
+        background-color: #2ECC40;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-lime {
+        background-color: #01FF70;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-yellow {
+        background-color: #FFDC00;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-orange {
+        background-color: #FF851B;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-red {
+        background-color: #FF4136;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-fuchsia {
+        background-color: #F012BE;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-purple {
+        background-color: #B10DC9;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-maroon {
+        background-color: #85144B;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-white {
+        background-color: #FFFFFF;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-gray {
+        background-color: #AAAAAA;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-silver {
+        background-color: #DDDDDD;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .bg-black {
+        background-color: #111111;
+        color: #FFF;
+    }
+
+    #flipdesk-html-button-content .navy {
+        color: #001F3F;
+    }
+
+    #flipdesk-html-button-content .blue {
+        color: #0074D9;
+    }
+
+    #flipdesk-html-button-content .aqua {
+        color: #7FDBFF;
+    }
+
+    #flipdesk-html-button-content .teal {
+        color: #39CCCC;
+    }
+
+    #flipdesk-html-button-content .olive {
+        color: #3D9970;
+    }
+
+    #flipdesk-html-button-content .green {
+        color: #2ECC40;
+    }
+
+    #flipdesk-html-button-content .lime {
+        color: #01FF70;
+    }
+
+    #flipdesk-html-button-content .yellow {
+        color: #FFDC00;
+    }
+
+    #flipdesk-html-button-content .orange {
+        color: #FF851B;
+    }
+
+    #flipdesk-html-button-content .red {
+        color: #FF4136;
+    }
+
+    #flipdesk-html-button-content .fuchsia {
+        color: #F012BE;
+    }
+
+    #flipdesk-html-button-content .purple {
+        color: #B10DC9;
+    }
+
+    #flipdesk-html-button-content .maroon {
+        color: #85144B;
+    }
+
+    #flipdesk-html-button-content .white {
+        color: #FFFFFF;
+    }
+
+    #flipdesk-html-button-content .silver {
+        color: #DDDDDD;
+    }
+
+    #flipdesk-html-button-content .gray {
+        color: #AAAAAA;
+    }
+
+    #flipdesk-html-button-content .black {
+        color: #111111;
+    }
+</style>
+<div class="fd-wrapper">
+    <ul class="flipdesk-layout-list">
+        <li>mizunohana商品は お客様で、施工会社をお探しいただく必要がございます。 ご了承下さい。<br>
+            
+            <ul class="flipdesk-layout-list-half">
+                <li><a href="#" class="flipdesk-r-button-a bg-gray">ボタンA</a></li>
+                <li><a href="#" class="flipdesk-r-button-b bg-gray">ボタンB</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
