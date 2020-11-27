@@ -2508,4 +2508,110 @@ div.colorPalette .colorBox .chocolat {
 div.colorPalette .colorBox .biscuit {
   background-color: #B4AA98;
 }
+
+.okaeri_header {
+  text-align: center;
+}
+
+.okaeri_header .pc_okaeri {
+  display: block;
+}
+
+.okaeri_header .pc_okaeri img {
+  border-radius: 10px;
+}
+
+.okaeri_header .sp_okaeri {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .okaeri_header .pc_okaeri {
+    display: none;
+  }
+  .okaeri_header .sp_okaeri {
+    display: block;
+  }
+}
+
+.okaeri_main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.okaeri_main div {
+  width: 50%;
+  margin-top: 2%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.okaeri_main div:first-child {
+  padding-right: 2%;
+}
+
+.okaeri_main div img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .okaeri_main div {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+section.okaeri_header h2 {
+  font-size: 4.0rem;
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media (max-width: 1024px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 680px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+    margin-bottom: 10%;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
