@@ -2404,3 +2404,55 @@ section.rule {
     }
   }
 }
+
+/******* おかえり手洗いカラーテーブル*******/
+div.colorPalette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  p {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: -15px;
+  }
+
+  .colorBox {
+    width: calc(100% / 3);
+    display: block;
+    padding: 3%;
+    
+
+    p:first-child {
+      width: 100%;
+      height: 100px;
+      margin-bottom: -10px;
+      border-radius: 10px;
+    }
+
+    .shiro {
+      background-color: #D7D7D5;
+    }
+
+    .kuro {
+      background-color: #080806;
+    }
+
+    .soba {
+      background-color: #C1C0BE;
+    }
+
+    .matcha {
+      background-color: #62602D;
+    }
+
+    .chocolat {
+      background-color: #574E47;
+    }
+
+    .biscuit {
+      background-color: #B4AA98;
+    }
+  }
+}

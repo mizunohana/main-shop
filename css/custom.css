@@ -2449,4 +2449,63 @@ section.rule td {
     border-bottom: solid 1px #ccc;
   }
 }
+
+/******* おかえり手洗いカラーテーブル*******/
+div.colorPalette {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+div.colorPalette p {
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: -15px;
+}
+
+div.colorPalette .colorBox {
+  width: calc(100% / 3);
+  display: block;
+  padding: 3%;
+}
+
+div.colorPalette .colorBox p:first-child {
+  width: 100%;
+  height: 100px;
+  margin-bottom: -10px;
+  border-radius: 10px;
+}
+
+div.colorPalette .colorBox .shiro {
+  background-color: #D7D7D5;
+}
+
+div.colorPalette .colorBox .kuro {
+  background-color: #080806;
+}
+
+div.colorPalette .colorBox .soba {
+  background-color: #C1C0BE;
+}
+
+div.colorPalette .colorBox .matcha {
+  background-color: #62602D;
+}
+
+div.colorPalette .colorBox .chocolat {
+  background-color: #574E47;
+}
+
+div.colorPalette .colorBox .biscuit {
+  background-color: #B4AA98;
+}
 /*# sourceMappingURL=custom.css.map */
