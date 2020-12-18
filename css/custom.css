@@ -2557,3 +2557,109 @@ div.colorPalette .colorBox .biscuit {
           flex-wrap: wrap;
 }
 
+.okaeri_main div {
+  width: 50%;
+  margin-top: 2%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.okaeri_main div :first-child {
+  padding-right: 2%;
+}
+
+.okaeri_main div img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .okaeri_main div {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+section.okaeri_header h2 {
+  font-size: 4.0rem;
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media (max-width: 1024px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 680px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section.okaeri_header h2 {
+    font-size: 2.0rem;
+    margin-bottom: 10%;
+  }
+}
+
+/****CLEARANCE****/
+section.clearancesale {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+section.clearancesale img {
+  width: 100%;
+  margin: 3% 0;
+}
+
+section.clearancesale h2 {
+  margin: 0 auto;
+  padding-top: 25px;
+  font-size: 2.0rem;
+  width: 90%;
+  text-align: center;
+  border-bottom: 3px solid;
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#40c2f0), to(#e85483));
+  -webkit-border-image: -webkit-linear-gradient(left, #40c2f0 0%, #e85483 100%);
+       -o-border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
+          border-image: -webkit-gradient(linear, left top, right top, from(#40c2f0), to(#e85483));
+          border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
+  border-image-slice: 0 0 1;
+  margin-bottom: 3%;
+}
+
+section.clearancesale h3 {
+  font-size: 3.0rem;
+  color: #40c2f0;
+  position: relative;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #40c2f0 0%, #E95383 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 900;
+}
+
+section.clearancesale h4 {
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=custom.css.map */
