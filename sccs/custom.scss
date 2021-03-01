@@ -2595,7 +2595,7 @@ section.clearancesale {
     font-weight: 900;
   }
 
-  h4{
+  h4 {
     font-size: 1.8rem;
   }
 }
@@ -2643,7 +2643,7 @@ section.clearancesale {
   color: $mizunohana-color;
   font-weight: bolder;
   margin: 0;
-  
+
 
   &::after {
     content: "";
@@ -2673,34 +2673,40 @@ section.clearancesale {
 
 }
 
-.accordion-content-box{
+.accordion-content-box {
   font-size: $font-size-16;
   margin: 2.5% 0;
+  padding-left: 1.6rem;
+
   //padding-left: 1.6rem;
-  section{
-  ul {
-    padding-left: 1.6rem;
-li {
-  line-height: 2;
-  list-style-image: url(/img/common/li_flower.png);
-}
+  section {
+    ul {
+      padding-left: 1.6rem;
+
+      li {
+        line-height: 2;
+        list-style-image: url(/img/common/li_flower.png);
+      }
+    }
   }
 }
-}
 
-.acc{
+.acc {
   font-size: $font-size-16;
   margin: 2.5% 0;
+  padding-left: 1.6rem;
+
   ul {
     padding-left: 1.6rem;
-li {
-  line-height: 2;
-  list-style-image: url(/img/common/li_flower.png);
-}
+
+    li {
+      line-height: 2;
+      list-style-image: url(/img/common/li_flower.png);
+    }
   }
 }
 
-.item_setsumei-box{
+.item_setsumei-box {
   padding: 2%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
@@ -2709,8 +2715,25 @@ li {
 }
 
 #sysItemDetail .sysCartButton,
-#cartInfo ,
+#cartInfo,
 #sysItemDetail .sysForm select,
-#sysItemDetail .sysMainImage img, .sysImageList img{
+#sysItemDetail .sysMainImage img,
+.sysImageList img {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item_option_expo-box {
+  padding: 2%;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 99%;
+  margin-bottom: 6%;
+line-height: 1.7;
+  h3 {
+    border-left: 10px solid #40C2F0;
+    font-size: 1.6rem !important;
+    padding: 0 0 0 6px;
+    font-weight: bold !important;
+    margin: 2% 0;
+  }
 }

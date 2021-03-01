@@ -2747,6 +2747,7 @@ section.clearancesale h4 {
 .accordion-content-box {
   font-size: 1.6rem;
   margin: 2.5% 0;
+  padding-left: 1.6rem;
 }
 
 .accordion-content-box section ul {
@@ -2761,6 +2762,7 @@ section.clearancesale h4 {
 .acc {
   font-size: 1.6rem;
   margin: 2.5% 0;
+  padding-left: 1.6rem;
 }
 
 .acc ul {
@@ -2784,8 +2786,27 @@ section.clearancesale h4 {
 #sysItemDetail .sysCartButton,
 #cartInfo,
 #sysItemDetail .sysForm select,
-#sysItemDetail .sysMainImage img, .sysImageList img {
+#sysItemDetail .sysMainImage img,
+.sysImageList img {
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item_option_expo-box {
+  padding: 2%;
+  background-color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 99%;
+  margin-bottom: 6%;
+  line-height: 1.7;
+}
+
+.item_option_expo-box h3 {
+  border-left: 10px solid #40C2F0;
+  font-size: 1.6rem !important;
+  padding: 0 0 0 6px;
+  font-weight: bold !important;
+  margin: 2% 0;
 }
 /*# sourceMappingURL=custom.css.map */
