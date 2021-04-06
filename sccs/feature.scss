@@ -752,7 +752,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 3% auto;
+  margin: 10% auto;
   background-color: $okaeri_font-color;
   max-width: 1200px;
   width: 90%;
@@ -905,7 +905,7 @@ body {
   background: url(./../img/feature/okaeri/okaeri_step_bk.jpg) no-repeat center
     center;
   background-size: cover;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 
   @include sp {
     flex-direction: column;
@@ -932,11 +932,97 @@ body {
     padding: 0;
     text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding-bottom: 3%;
+
+    h3,
+    h4 {
+      text-align: center;
+    }
+
+    h3 {
+      font-size: clamp(18px, 1.75vw, 25px);
+      margin-bottom: 5%;
+      font-weight: 750;
+    }
+
+    h4 {
+      font-size: clamp(16px, 1.5vw, 18px);
+      font-weight: 500;
+      margin-bottom: 5%;
+    }
   }
 
   img {
     display: block;
     margin: 10% auto;
     filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+  }
+}
+
+.okaeri__btn {
+  display: block;
+  color: $okaeri_font-color;
+  padding: 3%;
+  ont-size: clamp(16px, 1.5vw, 18px);
+  text-align: center;
+  font-weight: 750;
+  text-decoration: none;
+  border: 1px $okaeri_font-color solid;
+  border-radius: 10px;
+  transition: 0.4s;
+  &:hover {
+    color: white;
+    background-color: $okaeri_font-color;
+    transform: translate(0, -2px);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  }
+}
+
+.okaeri_step_content {
+  text-align: center;
+  &__wapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include sp {
+      flex-direction: column;
+    }
+  }
+}
+
+.straight-counter_color {
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+      width: 45%;
+    }
+  }
+
+  h3,
+  p {
+    margin: 0 auto;
+  }
+}
+
+.step_btn {
+  width: 100%;
+  justify-content: space-between;
+  a {
+    width: 40%;
+    margin: 5% 0;
   }
 }
