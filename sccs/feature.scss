@@ -840,3 +840,103 @@ body {
     }
   }
 }
+
+.okaeri_title_step {
+  position: relative;
+  background-color: $okaeri_font-color;
+  height: 450px;
+
+  @include sp {
+    height: 50vh;
+  }
+
+  h2 {
+    font-size: clamp(20px, 2vw, 35px);
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 3%;
+
+    img {
+      display: block;
+      margin: 10% auto;
+      filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+    }
+  }
+
+  .okaeri_title_step__img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+@include tab {
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+}
+
+.okaeri_step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: url(./../img/feature/okaeri/okaeri_step_bk.jpg) no-repeat center
+    center;
+  background-size: cover;
+  margin-bottom: 5%;
+
+  @include sp {
+    flex-direction: column;
+    height: auto;
+    background-position: 90% 0%;
+  }
+
+  &__wapper {
+    position: relative;
+    margin: 0 2%;
+
+    @include sp {
+      width: 90%;
+    }
+  }
+
+  &__inner {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 3%;
+  }
+
+  img {
+    display: block;
+    margin: 10% auto;
+    filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+  }
+}

@@ -1059,4 +1059,124 @@ body {
   font-size: 75%;
   font-weight: 400;
 }
+
+.okaeri_title_step {
+  position: relative;
+  background-color: #627e4e;
+  height: 450px;
+}
+
+@media (max-width: 480px) {
+  .okaeri_title_step {
+    height: 50vh;
+  }
+}
+
+.okaeri_title_step h2 {
+  font-size: clamp(20px, 2vw, 35px);
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 3%;
+}
+
+.okaeri_title_step h2 img {
+  display: block;
+  margin: 10% auto;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+}
+
+.okaeri_title_step .okaeri_title_step__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.3;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+}
+
+.okaeri_step {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  background: url(./../img/feature/okaeri/okaeri_step_bk.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 480px) {
+  .okaeri_step {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    background-position: 90% 0%;
+  }
+}
+
+.okaeri_step__wapper {
+  position: relative;
+  margin: 0 2%;
+}
+
+@media (max-width: 480px) {
+  .okaeri_step__wapper {
+    width: 90%;
+  }
+}
+
+.okaeri_step__inner {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 3%;
+}
+
+.okaeri_step img {
+  display: block;
+  margin: 10% auto;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+}
 /*# sourceMappingURL=feature.css.map */
