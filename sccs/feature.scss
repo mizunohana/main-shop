@@ -962,7 +962,7 @@ body {
   display: block;
   color: $okaeri_font-color;
   padding: 3%;
-  ont-size: clamp(16px, 1.5vw, 18px);
+  font-size: clamp(14px, 1.5vw, 18px);
   text-align: center;
   font-weight: 750;
   text-decoration: none;
@@ -994,35 +994,122 @@ body {
     @include sp {
       flex-direction: column;
     }
+
+    h3,
+    p {
+      margin: 0 auto;
+    }
+  }
+
+  img {
+    margin: 5% 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
 
-.straight-counter_color {
+.counter-type {
+  justify-content: space-between;
+  margin: 10% 0;
+
+  div {
+    width: 45%;
+
+    @include sp {
+      width: 90%;
+      margin-bottom: 10%;
+    }
+  }
+  img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+}
+
+.col_3_sb {
   justify-content: space-between;
   width: 100%;
 
   div {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-top: 5%;
+
+    @include sp {
+      width: 90%;
+      margin-bottom: 10%;
+    }
 
     div {
       width: 45%;
     }
   }
+}
 
-  h3,
-  p {
-    margin: 0 auto;
+.col_3_fs {
+  justify-content: flex-start;
+
+  div {
+    width: 30%;
+    margin-top: 5%;
+
+    &:last-child {
+      margin-left: 5%;
+    }
+    @include sp {
+      width: 90%;
+      margin-bottom: 10%;
+    }
   }
 }
 
 .step_btn {
   width: 100%;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   a {
     width: 40%;
-    margin: 5% 0;
+    margin: 5%;
+
+    @include sp {
+      width: 90%;
+      margin: 2% 0;
+    }
+  }
+}
+
+// アイテムリスト＿全商品
+.step_item_all_list {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include sp {
+    justify-content: space-between;
+  }
+
+  div {
+    width: 14%;
+    margin-right: 3%;
+
+    &:last-child {
+      margin-right: 0%;
+    }
+
+    @include tab {
+      width: 27%;
+      margin: 0%;
+    }
+  }
+  &::after {
+    display: block;
+    content: " ";
+    width: 300px;
   }
 }
