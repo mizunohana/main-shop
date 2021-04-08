@@ -692,11 +692,16 @@ section#okaeri_tearai {
       display: block;
       width: 20%;
       margin: 10% auto 2% auto;
+
+      @include sp {
+        width: 80%;
+      }
     }
   }
 
   img {
     filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+    object-fit: cover;
   }
 }
 
@@ -705,6 +710,7 @@ section#okaeri_tearai {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   background: url(./../img/feature/okaeri/okaeri__exp_img.jpeg) no-repeat center
     center;
   background-size: cover;
@@ -1078,7 +1084,7 @@ ul.step_item__list {
 
 .step_title__common-002 {
   padding: 5% 0;
-  font-size: clamp(16px, 2vw, 22px);
+  font-size: clamp(18px, 2vw, 22px);
   font-weight: 750;
 }
 
@@ -1114,7 +1120,7 @@ ul.step_item__list {
     width: 45%;
 
     @include sp {
-      width: 90%;
+      width: 100%;
       margin-bottom: 10%;
     }
   }
@@ -1154,9 +1160,15 @@ ul.step_item__list {
     width: 30%;
     margin-top: 5%;
 
+    &::after {
+      display: block;
+      content: " ";
+      width: 300px;
+    }
+
     @include sp {
       width: 100%;
-      margin-bottom: 10%;
+      // margin-bottom: 10%;
     }
 
     div {
@@ -1248,8 +1260,25 @@ ul.step_item__list {
       flex-direction: column;
     }
 
+    div {
+      width: 50%;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+    h2 {
+      font-size: clamp(25px, 2vw, 40px);
+      line-height: 1.4;
+      font-weight: 900;
+      margin-top: 10%;
+      small {
+        font-size: clamp(18px, 2vw, 25px);
+      }
+    }
     p {
       padding: 3%;
+      margin-bottom: 10%;
     }
   }
 
@@ -1282,7 +1311,9 @@ ul.step_item__list {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
         @include sp {
-          width: 95%;
+          width: 90%;
+          margin-top: 10%;
+          padding: 5%;
         }
       }
       h2 {
@@ -1302,4 +1333,28 @@ ul.step_item__list {
       }
     }
   }
+}
+
+/* fadeIn */
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeInTrigger {
+  opacity: 0;
 }

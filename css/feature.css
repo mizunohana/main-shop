@@ -844,9 +844,17 @@ section#okaeri_tearai {
   margin: 10% auto 2% auto;
 }
 
+@media (max-width: 480px) {
+  #okaeri footer img {
+    width: 80%;
+  }
+}
+
 #okaeri img {
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
           filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .okaeri__exp {
@@ -1338,7 +1346,7 @@ ul.step_item__list li {
 
 .step_title__common-002 {
   padding: 5% 0;
-  font-size: clamp(16px, 2vw, 22px);
+  font-size: clamp(18px, 2vw, 22px);
   font-weight: 750;
 }
 
@@ -1378,7 +1386,7 @@ ul.step_item__list li {
 
 @media (max-width: 480px) {
   .counter-type div {
-    width: 90%;
+    width: 100%;
     margin-bottom: 10%;
   }
 }
@@ -1451,10 +1459,15 @@ ul.step_item__list li {
   margin-top: 5%;
 }
 
+.col_3_sb div::after {
+  display: block;
+  content: " ";
+  width: 300px;
+}
+
 @media (max-width: 480px) {
   .col_3_sb div {
     width: 100%;
-    margin-bottom: 10%;
   }
 }
 
@@ -1590,8 +1603,30 @@ ul.step_item__list li {
   }
 }
 
+.product_info__titel div {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .product_info__titel div {
+    width: 100%;
+  }
+}
+
+.product_info__titel h2 {
+  font-size: clamp(25px, 2vw, 40px);
+  line-height: 1.4;
+  font-weight: 900;
+  margin-top: 10%;
+}
+
+.product_info__titel h2 small {
+  font-size: clamp(18px, 2vw, 25px);
+}
+
 .product_info__titel p {
   padding: 3%;
+  margin-bottom: 10%;
 }
 
 .product_info__inner {
@@ -1646,7 +1681,9 @@ ul.step_item__list li {
 
 @media (max-width: 480px) {
   .product_info__inner .product_list div {
-    width: 95%;
+    width: 90%;
+    margin-top: 10%;
+    padding: 5%;
   }
 }
 
@@ -1664,5 +1701,39 @@ ul.step_item__list li {
 
 .product_info__inner .product_list img {
   border-radius: 10px;
+}
+
+/* fadeIn */
+.fadeIn {
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeInTrigger {
+  opacity: 0;
 }
 /*# sourceMappingURL=feature.css.map */
