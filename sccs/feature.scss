@@ -1081,7 +1081,6 @@ body {
     }
   }
 }
-
 // アイテムリスト＿全商品
 .step_item_all_list {
   text-align: center;
@@ -1111,5 +1110,22 @@ body {
     display: block;
     content: " ";
     width: 300px;
+  }
+}
+
+//product_info__inner
+.product_info__inner {
+  width: 1200px;
+  margin: 0 auto;
+
+  .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      width: 30%;
+    }
   }
 }

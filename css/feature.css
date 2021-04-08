@@ -1425,4 +1425,31 @@ body {
   content: " ";
   width: 300px;
 }
+
+.product_info__inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.product_info__inner .product_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_info__inner .product_list div {
+  width: 30%;
+}
 /*# sourceMappingURL=feature.css.map */
