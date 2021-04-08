@@ -1335,26 +1335,9 @@ ul.step_item__list {
   }
 }
 
-/* fadeIn */
-.fadeIn {
-  animation-name: fadeInAnime;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes fadeInAnime {
-  from {
-    opacity: 0;
+.okaeri_exp__counter {
+  a {
+    text-decoration: none;
+    color: $okaeri_font-color;
   }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-
-.fadeInTrigger {
-  opacity: 0;
 }

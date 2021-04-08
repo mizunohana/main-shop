@@ -102,7 +102,24 @@
       });
     });
 
+    //スムーズスクロール
+    $(function () {
+      $('a[href^="#"]').click(function () {
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+          scrollTop: position
+        }, speed, "swing");
+        return false;
+      });
+    });
 
+    //IE　object_fit
+    $(function () {
+      objectFitImages();
+    });
 
   </script>
 
@@ -138,27 +155,33 @@
       </div>
     </section> <!-- .okaeri_title -->
     <section class="okaeri_exp__counter top">
+
       <div class="left_okaeri">
-        <h1>
-          <img src="./../img/feature/okaeri/okaeri_logo@2x.png" alt="かえり手洗い　「おかえり！」といつも最初におでむかえ">
-        </h1>
-        <h2>
-          ストレートカウンタータイプ
-        </h2>
-        <h3>
-          <span>希望販売価格:</span>¥107,800
-        </h3>
+        <a href="#straight_counter">
+          <h1>
+            <img src="./../img/feature/okaeri/okaeri_logo@2x.png" alt="かえり手洗い　「おかえり！」といつも最初におでむかえ">
+          </h1>
+          <h2>
+            ストレートカウンタータイプ
+          </h2>
+          <h3>
+            <span>希望販売価格:</span>¥107,800
+          </h3>
+        </a>
       </div>
+
       <div class="right_okaeri">
-        <h1>
-          <img src="./../img/feature/okaeri/okaeri_logo@2x.png" alt="かえり手洗い　「おかえり！」といつも最初におでむかえ">
-        </h1>
-        <h2>
-          コーナーカウンタータイプ
-        </h2>
-        <h3>
-          近日発売開始予定
-        </h3>
+        <a href="#corner_counter">
+          <h1>
+            <img src="./../img/feature/okaeri/okaeri_logo@2x.png" alt="かえり手洗い　「おかえり！」といつも最初におでむかえ">
+          </h1>
+          <h2>
+            コーナーカウンタータイプ
+          </h2>
+          <h3>
+            近日発売開始予定
+          </h3>
+        </a>
       </div>
     </section> <!-- .okaeri_exp__counter -->
     <section class="okaeri_title down">
@@ -186,7 +209,7 @@
           <h4>
             カウンター・パネルを各タイプからお選び頂けます。
           </h4>
-          <a class="okaeri__btn" href="#">詳細を見る</a>
+          <a class="okaeri__btn" href="#choice_counter">詳細を見る</a>
         </div> <!-- .okaeri_step__inner -->
       </div> <!-- .okaeri_step__wapper -->
       <!-- ステップ02-おしゃれな手洗いボウルを選ぶ -->
@@ -198,7 +221,7 @@
             手洗いボウルを選ぶ
           </h3>
           <h4>丸型または角型、ガラスの3タイプからお選びください。</h4>
-          <a class="okaeri__btn" href="#">詳細を見る</a>
+          <a class="okaeri__btn" href="#choice_basin">詳細を見る</a>
         </div> <!-- .okaeri_step__inner -->
       </div> <!-- .okaeri_step__wapper -->
       <!-- ステップ03-配管・水栓・排水金具を選ぶ-->
@@ -211,12 +234,12 @@
           </h3>
           <h4>壁配管または床配管の２タイプからお選び頂けます。<br>
           </h4>
-          <a class="okaeri__btn" href="#">詳細を見る</a>
+          <a class="okaeri__btn" href="#choice_drainaga">詳細を見る</a>
         </div> <!-- /.okaeri_step__inner -->
       </div> <!-- .okaeri_step__wapper -->
     </section> <!-- .okaeri_step -->
     <!-- ステップタイトル 001 -->
-    <section class="okaeri_title_step">
+    <section class="okaeri_title_step" id="choice_counter">
       <!-- PC -->
       <img src="./../img/feature/okaeri/okaeri_title_step_001.jpg" alt="おかえり手洗い" class="okaeri_title_step__img pc-only">
       <!-- SP -->
@@ -312,7 +335,7 @@
           <!-- カウンター色：ダークブラン -->
         </div> <!-- /.okaeri_step_content__inner straight-counter_color -->
         <div class="okaeri_step_content__inner step_btn down">
-          <a class="okaeri__btn" href="#">商品について問い合わせはこちら</a>
+          <a class="okaeri__btn" href="https://ssl.aispr.jp/mizunohana/form/inquiry/">商品について問い合わせはこちら</a>
           <a class="okaeri__btn" href="#">ストレートカウンタータイプ商品一覧はこちら</a>
         </div> <!-- /.okaeri_step_content__inner -->
         <!-- ストレートカウンタータイプについて -->
@@ -346,14 +369,14 @@
         </div> <!-- /.okaeri_step_content__inner .col_3_fs -->
 
         <div class="okaeri_step_content__inner step_btn down">
-          <a class="okaeri__btn" href="#">商品について問い合わせはこちら</a>
+          <a class="okaeri__btn" href="https://ssl.aispr.jp/mizunohana/form/inquiry/">商品について問い合わせはこちら</a>
           <!-- コーナータイプがは発売されるまでコメントアウト -->
-          <a class="okaeri__btn" href="#">コーナーカウンタータイプ商品一覧はこちら</a>
+          <a class="okaeri__btn" href="#corner_counter">コーナーカウンタータイプ商品一覧はこちら</a>
         </div> <!-- /.okaeri_step_content__inner -->
       </div> <!-- /.okaeri_step_content__wapper -->
     </section> <!-- /.okaeri_step_content -->
     <!-- ステップタイトル 002 -->
-    <section class="okaeri_title_step">
+    <section class="okaeri_title_step" id="choice_basin">
       <!-- PC -->
       <img src="./../img/feature/okaeri/okaeri_title_step_001.jpg" alt="おかえり手洗い" class="okaeri_title_step__img pc-only">
       <!-- SP -->
@@ -377,15 +400,15 @@
         <div class="okaeri_step_content__inner col_3_sb">
           <div class="down_to_top move_1">
             <h3 class="step_title__common-002">丸型手洗いボウル</h3>
-            <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション豊富な丸型手洗いボウル">
+            <img src="./../img/item/B187/B187_01.png" alt="おしゃれで、カラーバリエーション豊富な丸型手洗いボウル">
           </div>
           <div class="down_to_top move_2">
             <h3 class="step_title__common-002">角型手洗いボウル</h3>
-            <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション豊富な角型手洗いボウル">
+            <img src="./../img/item/B196/B196_01.png" alt="おしゃれで、カラーバリエーション豊富な角型手洗いボウル">
           </div>
           <div class="down_to_top move_3">
             <h3 class="step_title__common-002">ガラス型手洗いボウル<br></h3>
-            <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション豊富なガラス型手洗いボウル">
+            <img src="./../img/item/B182/B182_01.png" alt="おしゃれで、カラーバリエーション豊富なガラス型手洗いボウル">
           </div>
         </div> <!-- .okaeri_step_content__inner col_3_sb -->
         <!-- 丸型手洗いボウルアイテムインフォ -->
@@ -396,7 +419,7 @@
           <!-- item-img -->
           <div class="col_2_sb">
             <div class="down_to_top move_1">
-              <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション豊富な丸型手洗いボウル">
+              <img src="./../img/item/B187/B187_01.png" alt="おしゃれで、カラーバリエーション豊富な丸型手洗いボウル">
             </div>
             <!-- item-info -->
             <div class="down_to_top move_2">
@@ -415,34 +438,34 @@
           <!-- 各商品リスト -->
           <div class="step_item_all_list down">
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B187/B187_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">shiro</h4>
             </div>
             <div>
-              <img src=" ./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B188/B188_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Kuro</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B189/B189_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Soba</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B190/B190_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Matcha</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B191/B191_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005"> Chocolat</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B192/B192_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Bisuit</h4>
             </div>
           </div> <!-- /.step_item_all_list -->
         </div> <!-- /.step_item__info -->
         <div class="okaeri_step_content__inner step_btn down">
           <a class="okaeri__btn" href="#">ストレートカウンタータイプはこちら</a>
-          <a class="okaeri__btn" href="#">コーナーカウンタータイプはこちら</a>
+          <a class="okaeri__btn" href="#corner_counter">コーナーカウンタータイプはこちら</a>
         </div> <!-- /.okaeri_step_content__inner -->
         <!-- 角型手洗いボウルアイテムインフォ -->
         <h2 class="step_title down">
@@ -452,7 +475,7 @@
           <div class="col_2_sb">
             <!-- item-img -->
             <div class="down_to_top move_1">
-              <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション角型手洗いボウル">
+              <img src="./../img/item/B196/B196_01.png" alt="おしゃれで、カラーバリエーション角型手洗いボウル">
             </div>
             <!-- item-info -->
             <div class="down_to_top move_2">
@@ -471,33 +494,33 @@
           <!-- 各商品リスト -->
           <div class="step_item_all_list down">
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B194/B194_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">shiro</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B195/B195_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Kuro</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B196/B196_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Soba</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B197/B197_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Matcha</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B198/B198_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Chocolat</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B199/B199_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">Bisuit</h4>
             </div>
           </div> <!-- /.step_item_all_list -->
           <div class="okaeri_step_content__inner step_btn down">
             <a class="okaeri__btn" href="#">ストレートカウンタータイプはこちら</a>
-            <a class="okaeri__btn" href="#">コーナーカウンタータイプはこちら</a>
+            <a class="okaeri__btn" href="#corner_counter">コーナーカウンタータイプはこちら</a>
           </div> <!-- /.okaeri_step_content__inner -->
         </div> <!-- /.step_item__info -->
         <!-- ガラス型手洗いボウルアイテムインフォ -->
@@ -508,7 +531,7 @@
           <div class="col_2_sb">
             <!-- item-img -->
             <div class="down_to_top move_1">
-              <img src="./../img/feature/okaeri/dummy.png" alt="おしゃれで、カラーバリエーション豊富ガラス型手洗いボウル">
+              <img src="./../img/item/B182/B182_01.png" alt="おしゃれで、カラーバリエーション豊富ガラス型手洗いボウル">
             </div>
             <!-- item-info -->
             <div class="down_to_top move_2">
@@ -527,23 +550,23 @@
           <!-- 各商品リスト -->
           <div class="step_item_all_list down">
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B181/B181_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">ガラス-01</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B182/B182_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">ガラス-02</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B183/B183_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">ガラス-03</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B184/B184_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">ガラス-04</h4>
             </div>
             <div>
-              <img src="./../img/feature/okaeri/dummy.png" alt="おかえり手洗い">
+              <img src="./../img/item/B185/B185_01.png" alt="おかえり手洗い">
               <h4 class="step_title__common-005">ガラス-05</h4>
             </div>
             <div>
@@ -551,14 +574,14 @@
             </div>
           </div> <!-- /.step_item_all_list -->
           <div class="okaeri_step_content__inner step_btn down">
-            <a class="okaeri__btn" href="#">コーナーカウンタータイプはこちら</a>
+            <a class="okaeri__btn" href="#corner_counter">コーナーカウンタータイプはこちら</a>
           </div> <!-- /.okaeri_step_content__inner -->
         </div> <!-- /.step_item__info -->
       </div> <!-- /.okaeri_step_content__wapper -->
     </section> <!-- /.okaeri_step_content -->
 
     <!-- ステップタイトル 003 -->
-    <section class="okaeri_title_step">
+    <section class="okaeri_title_step" id="choice_drainaga">
       <!-- PC -->
       <img src="./../img/feature/okaeri/okaeri_title_step_001.jpg" alt="おかえり手洗い" class="okaeri_title_step__img pc-only">
       <!-- SP -->
@@ -596,12 +619,12 @@
         <div class="okaeri_step_content__inner step_btn down">
           <a class="okaeri__btn" href="#">ストレートカウンタータイプ商品一覧はこちら</a>
           <!-- コーナータイプが販売可能になったら、オープン -->
-          <a class="okaeri__btn" href="#">コーナーカウンタータイプ商品一覧はこちら</a>
+          <a class="okaeri__btn" href="#corner_counter">コーナーカウンタータイプ商品一覧はこちら</a>
         </div> <!-- /.okaeri_step_content__inner -->
       </div> <!-- .okaeri_step_content__wapper -->
     </section> <!-- .okaeri_step_content -->
 
-    <!-- ステップタイトル 003 -->
+    <!-- ステップタイトル 004 -->
     <section class="okaeri_title_step">
       <!-- PC -->
       <img src="./../img/feature/okaeri/okaeri_title_step_001.jpg" alt="おかえり手洗い" class="okaeri_title_step__img pc-only">
@@ -720,7 +743,7 @@
               <h4>
                 カウンター・パネルを下記、商品一覧からお選び下さい。
               </h4>
-              <a class="okaeri__btn" href="#">カウンターの詳細はこちら</a>
+              <a class="okaeri__btn" href="#choice_counter">カウンターの詳細はこちら</a>
             </div> <!-- .okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
           <!-- ステップ02-おしゃれな手洗いボウルを選ぶ -->
@@ -734,7 +757,7 @@
               <h4>
                 丸型または角型の2タイプからお選びください。
               </h4>
-              <a class="okaeri__btn" href="#">詳細を見る</a>
+              <a class="okaeri__btn" href="#choice_basin">詳細を見る</a>
             </div> <!-- .okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
           <!-- ステップ03-配管・水栓・排水金具を選ぶ-->
@@ -748,7 +771,7 @@
               <h4>
                 壁配管または床配管の２タイプからお選び頂けます。
               </h4>
-              <a class="okaeri__btn" href="#">詳細を見る</a>
+              <a class="okaeri__btn" href="#choice_drainaga">詳細を見る</a>
             </div> <!-- /.okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
         </section> <!-- .okaeri_step -->
@@ -833,7 +856,7 @@
               <h4>
                 カウンター・パネルを下記、商品一覧からお選び下さい。
               </h4>
-              <a class="okaeri__btn" href="#">カウンターの詳細はこちら</a>
+              <a class="okaeri__btn" href="#choice_counter">カウンターの詳細はこちら</a>
             </div> <!-- .okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
           <!-- ステップ02-おしゃれな手洗いボウルを選ぶ -->
@@ -847,7 +870,7 @@
               <h4>
                 丸型または角型、ガラス型の3タイプからお選びください。
               </h4>
-              <a class="okaeri__btn" href="#">詳細を見る</a>
+              <a class="okaeri__btn" href="#choice_basin">詳細を見る</a>
             </div> <!-- .okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
           <!-- ステップ03-配管・水栓・排水金具を選ぶ-->
@@ -861,7 +884,7 @@
               <h4>
                 壁配管または床配管の２タイプからお選び頂けます。
               </h4>
-              <a class="okaeri__btn" href="#">詳細を見る</a>
+              <a class="okaeri__btn" href="#choice_drainaga">詳細を見る</a>
             </div> <!-- /.okaeri_step__inner -->
           </div> <!-- .okaeri_step__wapper -->
         </section> <!-- .okaeri_step -->
@@ -915,7 +938,7 @@
       </div> <!-- /.product_info__wapper -->
     </section> <!-- /#corner_counter.product_info-->
 
-    <!-- コーナーカウンタータイプ詳細 -->
+    <!-- 壁掛けタイプ詳細 -->
     <section class="product_info">
       <div class="product_info__wapper">
         <div class="product_info__titel down_to_top">
