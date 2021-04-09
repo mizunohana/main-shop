@@ -1707,4 +1707,9 @@ ul.step_item__list li {
   text-decoration: none;
   color: #627e4e;
 }
+
+.step-titel_img_02 {
+  -o-object-position: top;
+     object-position: top;
+}
 /*# sourceMappingURL=feature.css.map */
