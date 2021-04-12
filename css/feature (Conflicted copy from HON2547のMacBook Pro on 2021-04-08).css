@@ -844,18 +844,9 @@ section#okaeri_tearai {
   margin: 10% auto 2% auto;
 }
 
-@media (max-width: 480px) {
-  #okaeri footer img {
-    width: 80%;
-  }
-}
-
 #okaeri img {
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
           filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  font-family: "object-fit: cover";
 }
 
 .okaeri__exp {
@@ -1157,7 +1148,7 @@ section#okaeri_tearai {
   margin-bottom: 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .okaeri_step {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1215,11 +1206,6 @@ section#okaeri_tearai {
   margin: 5% auto;
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
           filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
-}
-
-.okaeri_step_bk-002 {
-  background: url(./../img/feature/okaeri/okaeri_step_bk_002.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 .okaeri__btn {
@@ -1293,11 +1279,6 @@ section#okaeri_tearai {
   border-radius: 10px;
 }
 
-.okaeri_step_content a {
-  text-decoration: none;
-  color: #627e4e;
-}
-
 ul.step_item__list {
   text-align: left;
   margin-top: 5%;
@@ -1357,7 +1338,7 @@ ul.step_item__list li {
 
 .step_title__common-002 {
   padding: 5% 0;
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(16px, 2vw, 22px);
   font-weight: 750;
 }
 
@@ -1397,7 +1378,7 @@ ul.step_item__list li {
 
 @media (max-width: 480px) {
   .counter-type div {
-    width: 100%;
+    width: 90%;
     margin-bottom: 10%;
   }
 }
@@ -1470,15 +1451,10 @@ ul.step_item__list li {
   margin-top: 5%;
 }
 
-.col_3_sb div::after {
-  display: block;
-  content: " ";
-  width: 300px;
-}
-
 @media (max-width: 480px) {
   .col_3_sb div {
     width: 100%;
+    margin-bottom: 10%;
   }
 }
 
@@ -1523,10 +1499,10 @@ ul.step_item__list li {
   margin: 4%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .step_btn a {
-    width: 80%;
-    margin: 2%;
+    width: 100%;
+    margin: 2% 0;
   }
 }
 
@@ -1549,7 +1525,7 @@ ul.step_item__list li {
           flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .step_item_all_list {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -1604,7 +1580,7 @@ ul.step_item__list li {
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .product_info__titel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1614,30 +1590,8 @@ ul.step_item__list li {
   }
 }
 
-.product_info__titel div {
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  .product_info__titel div {
-    width: 100%;
-  }
-}
-
-.product_info__titel h2 {
-  font-size: clamp(25px, 2vw, 40px);
-  line-height: 1.4;
-  font-weight: 900;
-  margin-top: 10%;
-}
-
-.product_info__titel h2 small {
-  font-size: clamp(18px, 2vw, 25px);
-}
-
 .product_info__titel p {
   padding: 3%;
-  margin-bottom: 10%;
 }
 
 .product_info__inner {
@@ -1646,9 +1600,9 @@ ul.step_item__list li {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .product_info__inner {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1681,102 +1635,17 @@ ul.step_item__list li {
 }
 
 .product_info__inner .product_list div {
-  width: 27%;
-  border-radius: 10px;
-  margin-top: 5%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-@media (max-width: 768px) {
-  .product_info__inner .product_list div {
-    width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  .product_info__inner .product_list div {
-    width: 90%;
-    margin-top: 10%;
-    padding: 5%;
-  }
-}
-
-.product_info__inner .product_list h2 {
-  text-align: center;
+  width: 30%;
   margin: 5% 0;
-  font-size: clamp(18px, 2vw, 22px);
 }
 
-.product_info__inner .product_list h3 {
-  text-align: center;
-  font-size: clamp(14px, 1.5vw, 18px);
-  margin-bottom: 5%;
+@media (max-width: 480px) {
+  .product_info__inner .product_list div {
+    width: 95%;
+  }
 }
 
-.product_info__inner .product_list img {
+.product_info__inner img {
   border-radius: 10px;
-  max-width: 320px;
-  max-height: 320px;
 }
-
-.okaeri_exp__counter a {
-  text-decoration: none;
-  color: #627e4e;
-}
-
-.step-titel_img_02 {
-  -o-object-position: top;
-     object-position: top;
-}
-
-/******************
-おかえり手洗いバナー
-*******************/
-.okaeri_ad {
-  position: relative;
-  height: 65vh;
-  margin: 10% 0;
-}
-
-@media (max-width: 480px) {
-  .okaeri_ad {
-    height: 50vh;
-  }
-}
-
-.okaeri_ad h2 {
-  font-size: clamp(20px, 2vw, 35px);
-  text-align: center;
-  position: absolute;
-  color: #627e4e;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 2%;
-  border: #ad8907 5px solid;
-  background-color: rgba(234, 227, 193, 0.8);
-}
-
-@media (max-width: 480px) {
-  .okaeri_ad h2 {
-    width: 80%;
-  }
-}
-
-.okaeri_ad h2 img {
-  display: block;
-  margin: 3% auto;
-  width: 50%;
-}
-
-.okaeri_ad h2 a {
-  margin: 3% auto;
-}
-/*# sourceMappingURL=feature.css.map */
+/*# sourceMappingURL=feature (Conflicted copy from HON2547のMacBook Pro on 2021-04-08).css.map */
