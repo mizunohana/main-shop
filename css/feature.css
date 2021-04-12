@@ -1729,6 +1729,7 @@ ul.step_item__list li {
 .step-titel_img_02 {
   -o-object-position: top;
      object-position: top;
+  background-size: cover;
 }
 
 /******************
