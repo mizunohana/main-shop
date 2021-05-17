@@ -4192,7 +4192,8 @@ img.pc {
 .top-information ul li {
   text-align: center;
   font-size: 1.6rem;
-  padding: 15px 0;
+  /* padding: 15px 0; */
+  padding: 5px 0;
 }
 
 .top-information ul li br {
