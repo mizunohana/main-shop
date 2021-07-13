@@ -39,8 +39,16 @@ html {
 
 body {
   //16px
-  font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-    "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-family:
+    "M PLUS Rounded 1c",
+    "M PLUS 1p",
+    sans-serif,
+    "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro",
+    "メイリオ",
+    "Lucida Grande",
+    Verdana,
+    "ＭＳ Ｐゴシック";
   // color: #333;
   font-size: $font-size-pc;
   // background-color: #fff;
@@ -331,7 +339,10 @@ section.feature_led {
       font-size: 15vw;
       color: #fff;
       text-align: left;
-      text-shadow: 0 0 100px #fff, 0 0 40px #40c2f0, 0 0 50px #40c2f0,
+      text-shadow:
+        0 0 100px #fff,
+        0 0 40px #40c2f0,
+        0 0 50px #40c2f0,
         0 0 60px #40c2f0;
 
       @include sp {
@@ -360,7 +371,10 @@ section.feature_led {
     font-size: 5rem;
     font-weight: 900;
     text-align: center;
-    text-shadow: 0 0 100px #fff, 0 0 40px #40c2f0, 0 0 50px #40c2f0,
+    text-shadow:
+      0 0 100px #fff,
+      0 0 40px #40c2f0,
+      0 0 50px #40c2f0,
       0 0 60px #40c2f0;
 
     @include sp {
@@ -663,16 +677,16 @@ section#okaeri_tearai {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background: url(./../img/feature/okaeri/header-img.webp) no-repeat center
+    background:
+      url(./../img/feature/okaeri/header-img.webp) no-repeat center
       center;
-    background-color: $okaeri_font-color;
     background-size: cover;
 
     @include tab {
       height: 70vh;
-      background: url(./../img/feature/okaeri/header-img_sp.webp) no-repeat
+      background:
+        url(./../img/feature/okaeri/header-img_sp.webp) no-repeat
         center center;
-      background-color: $okaeri_font-color;
       background-size: cover;
     }
 
@@ -712,7 +726,8 @@ section#okaeri_tearai {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background: url(./../img/feature/okaeri/okaeri__exp_img.webp) no-repeat center
+  background:
+    url(./../img/feature/okaeri/okaeri__exp_img.webp) no-repeat center
     center;
   background-color: $okaeri_font-color;
   background-size: cover;
@@ -828,7 +843,8 @@ section#okaeri_tearai {
   justify-content: center;
   padding: 5% 0;
   text-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  background: url(./../img/feature/okaeri/okaeri_exp_counter_bk@2x.webp)
+  background:
+    url(./../img/feature/okaeri/okaeri_exp_counter_bk@2x.webp)
     no-repeat center center;
   background-size: cover;
 
@@ -932,7 +948,8 @@ section#okaeri_tearai {
   justify-content: center;
   height: 70vh;
   margin-bottom: 10%;
-  background: url(./../img/feature/okaeri/okaeri_step_bk.webp) no-repeat center
+  background:
+    url(./../img/feature/okaeri/okaeri_step_bk.webp) no-repeat center
     center;
   background-size: cover;
 
@@ -988,7 +1005,8 @@ section#okaeri_tearai {
 }
 
 .okaeri_step_bk-002 {
-  background: url(./../img/feature/okaeri/okaeri_step_bk_002.webp) no-repeat
+  background:
+    url(./../img/feature/okaeri/okaeri_step_bk_002.webp) no-repeat
     center center;
   background-size: cover;
 }
