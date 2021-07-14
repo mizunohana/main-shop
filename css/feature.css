@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "M PLUS Rounded 1c", "M PLUS 1p", sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック";
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -816,7 +816,6 @@ section#okaeri_tearai {
   height: 100vh;
   text-align: center;
   background: url(./../img/feature/okaeri/header-img.webp) no-repeat center center;
-  background-color: #627e4e;
   background-size: cover;
 }
 
@@ -824,7 +823,6 @@ section#okaeri_tearai {
   #okaeri header {
     height: 70vh;
     background: url(./../img/feature/okaeri/header-img_sp.webp) no-repeat center center;
-    background-color: #627e4e;
     background-size: cover;
   }
 }
