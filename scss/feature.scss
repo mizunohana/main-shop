@@ -1448,3 +1448,14 @@ ul.step_item__list {
     font-weight: 500;
   }
 }
+
+/*商品詳細リンク*/
+.item_link {
+  color: #4265bc;
+}
+.item_link:after {
+  margin: 0 0 0 10px;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+}
