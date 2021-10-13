@@ -1459,3 +1459,10 @@ ul.step_item__list {
   content: "";
   font-weight: 900;
 }
+
+/*商品詳細ページ改行削除*/
+.item_setsumei-box,
+.accordion-container ul li,
+.accordion-content-box ul li {
+  white-space: pre-line;
+}
