@@ -1,41 +1,45 @@
 <script type="text/javascript">
-$(function(){
-        $('a[href^="#"]').click(function(){
-          var speed = 500;
-          var href= $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top;
-          $("html, body").animate({scrollTop:position}, speed, "swing");
-          return false;
+    $(function () {
+        $('a[href^="#"]').click(function () {
+            var speed = 500;
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({ scrollTop: position }, speed, "swing");
+            return false;
         });
-      });
+    });
 
-      $(function () {
-      objectFitImages();
+    $(function () {
+        objectFitImages();
     });
 </script>
 <section style="margin-top: 0;" class="showroom_box">
-<h2>ショールームのご案内</h2>
+    <h2>ショールームのご案内</h2>
 
-<img src="./img/top/main_banner_001.png" alt="mizunohanaと最初に出会う場所" style="width: 100%;">
-<hr>
-<p class="txt_center">mizunohanaの主要ラインナップを展示しています。<br>
-    現物を見て、触れて、確かめてーーー<br>
-    個人のお住い、店舗、オフィスなど導入シーンのイメージを喚起する<br>
-    シュミレーションルームとしてもぜひお役立てください。<br>
-    ショールームは一部予約制となります。下記からお申し込みください。</p>
+    <img src="./img/top/main_banner_001.png" alt="mizunohanaと最初に出会う場所" style="width: 100%;">
+    <hr>
+    <p class="txt_center">mizunohanaの主要ラインナップを展示しています。<br>
+        現物を見て、触れて、確かめてーーー<br>
+        個人のお住い、店舗、オフィスなど導入シーンのイメージを喚起する<br>
+        シュミレーションルームとしてもぜひお役立てください。<br>
+        ショールームは一部予約制となります。下記からお申し込みください。</p>
 
-<div class="btn">
-    <a href="https://ssl.aispr.jp/mizunohana/form/showroom/" class="btn-cross">
-        ショールームを予約する
-    </a>
-</div>
+    <div class="btn">
+        <a href="https://ssl.aispr.jp/mizunohana/form/showroom/" class="btn-cross">
+            ショールームを予約する
+        </a>
+    </div>
 
-<ul class="showrroom_list">
-    <a href="#osaka"> <li>大阪ショールーム</li></a>
-    <a href="#yokohama"><li>横浜ショールーム</li></a>
-    <!--<li>東京サテライトショールーム</li>-->
-</ul>
+    <ul class="showrroom_list">
+        <a href="#osaka">
+            <li>大阪ショールーム</li>
+        </a>
+        <a href="#yokohama">
+            <li>横浜ショールーム</li>
+        </a>
+        <!--<li>東京サテライトショールーム</li>-->
+    </ul>
 
 </section>
 
@@ -43,16 +47,19 @@ $(function(){
     <h4><span>mizunohana</span>
         大阪ショールーム</h4>
     <!--スライドショー-->
-    <div class="slide" >
-        <img src="./img/common/showroom/osaka_sr_01.png"   alt="大阪ショールーム1">
-        <img src="./img/common/showroom/osaka_sr_02.png"    alt="大阪ショールーム2">
-        <img src="./img/common/showroom/osaka_sr_03.png"    alt="大阪ショールーム3">
+    <div class="slide">
+        <img src="./img/common/showroom/osaka_sr_01.png" alt="大阪ショールーム1">
+        <img src="./img/common/showroom/osaka_sr_02.png" alt="大阪ショールーム2">
+        <img src="./img/common/showroom/osaka_sr_03.png" alt="大阪ショールーム3">
         <img src="./img/common/showroom/osaka_sr_04.png" alt="大阪ショールーム4">
         <img src="./img/common/showroom/osaka_sr_05.png" alt="大阪ショールーム5">
     </div>
 
     <div class="sr_info">
         <h5>インフォメーション</h5>
+        <p>大阪ショールームを見学希望で、弊社スタッフの対応が必要な場合は、ご予約をお願いいたします。</p>
+        <p>※弊社スタッフの対応ができるのは、平日のみとなります。</p>
+        <p>弊社スタッフの対応が不要な場合、IHPCの担当が案内していただけますので、ATC9階の総合受付で、受付をお願いいたします。</p>
         <p>当面の間は、営業時間を10:00～17:30に短縮させていただきます。<br>
             ※ご来場の際には、マスクをご持参の上、必ずご着用いただけますようお願いいたします。</p>
         <h5>営業時間</h5>
@@ -63,7 +70,8 @@ $(function(){
         <p>〒559-0034<br>
             大阪府住之江区南港北2-1-10<br>
             ATCビルITM棟9F(IHPC内)<br>
-            <a href="https://goo.gl/maps/t5rBDNUwX3fWiaFG6">(MAP)</a></p>
+            <a href="https://goo.gl/maps/t5rBDNUwX3fWiaFG6">(MAP)</a>
+        </p>
         <h5>アクセス</h5>
         <p class="acces">公共交通機関をご利用の場合</p>
         <p>大阪メトロ南港ポートタウン線 トレードセンター前駅より直結</p><br>
@@ -82,13 +90,13 @@ $(function(){
     <h4><span>mizunohana</span>
         横浜ショールーム</h4>
     <!--スライドショー-->
-    <div class="slide" >
-        <img src="./img/common/showroom/yokohama_sr_01.png"   alt="横浜ショールーム1">
-        <img src="./img/common/showroom/yokohama_sr_02.png"    alt="横浜ショールーム2">
-        <img src="./img/common/showroom/yokohama_sr_03.png"    alt="横浜ショールーム3">
-        <img src="./img/common/showroom/yokohama_sr_04.png"    alt="横浜ショールーム4">
-        <img src="./img/common/showroom/yokohama_sr_05.png"    alt="横浜ショールーム5">
-      </div>
+    <div class="slide">
+        <img src="./img/common/showroom/yokohama_sr_01.png" alt="横浜ショールーム1">
+        <img src="./img/common/showroom/yokohama_sr_02.png" alt="横浜ショールーム2">
+        <img src="./img/common/showroom/yokohama_sr_03.png" alt="横浜ショールーム3">
+        <img src="./img/common/showroom/yokohama_sr_04.png" alt="横浜ショールーム4">
+        <img src="./img/common/showroom/yokohama_sr_05.png" alt="横浜ショールーム5">
+    </div>
     <div class="sr_info">
         <h5>インフォメーション</h5>
         <p>当面の間は、事前予約制となります<br>
@@ -101,7 +109,8 @@ $(function(){
         <p>〒231-0001<br>
             神奈川県横浜市中区新港二丁目2-1<br>
             横浜ワールドポーターズ6F<br>
-            <a href="https://goo.gl/maps/2FjBJxwbMWzT8cpv9">(MAP)</a></p>
+            <a href="https://goo.gl/maps/2FjBJxwbMWzT8cpv9">(MAP)</a>
+        </p>
         <h5>アクセス</h5>
         <p class="acces">公共交通機関をご利用の場合</p>
         <p>横浜高速鉄道みなとみらい線 みなとみらい駅より徒歩5分<br>
